@@ -1,0 +1,6 @@
+[2026-05-17T10:56:12.345Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T10:56:13.532Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (1187ms)
+[2026-05-17T10:56:13.532Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T10:56:13.753Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (220ms)
+[2026-05-17T10:56:13.753Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/3294{"headers":["Authorization","Cookie"]}
+[2026-05-17T10:56:14.014Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/3294 201 (261ms)

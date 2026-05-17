@@ -1,0 +1,2 @@
+[2026-05-17T10:46:07.848Z]INFO -> GET https://restful-booker.herokuapp.com/booking?checkin=invalid-date{"headers":["Authorization"]}
+[2026-05-17T10:46:08.744Z]INFO <- GET https://restful-booker.herokuapp.com/booking?checkin=invalid-date 500 (895ms)

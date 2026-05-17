@@ -1,0 +1,4 @@
+[2026-05-17T10:57:24.402Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T10:57:24.623Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (221ms)
+[2026-05-17T10:57:24.624Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/4042{"headers":["Authorization"]}
+[2026-05-17T10:57:24.843Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/4042 403 (218ms)

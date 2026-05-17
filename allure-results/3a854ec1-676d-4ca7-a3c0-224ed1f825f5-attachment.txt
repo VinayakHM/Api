@@ -1,0 +1,2 @@
+[2026-05-17T10:46:07.397Z]INFO -> GET https://restful-booker.herokuapp.com/booking/1.5{"headers":["Authorization"]}
+[2026-05-17T10:46:07.619Z]INFO <- GET https://restful-booker.herokuapp.com/booking/1.5 200 (223ms)

@@ -1,0 +1,2 @@
+[2026-05-17T10:57:38.197Z]INFO -> GET https://restful-booker.herokuapp.com/booking/1'; DROP TABLE bookings; --{"headers":["Authorization"]}
+[2026-05-17T10:57:39.101Z]INFO <- GET https://restful-booker.herokuapp.com/booking/1'; DROP TABLE bookings; -- 404 (903ms)

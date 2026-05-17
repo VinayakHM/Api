@@ -1,91 +1,766 @@
-<testsuites id="" name="" tests="13" failures="0" skipped="0" errors="0" time="1.711299">
-<testsuite name="data-integrity.spec.ts" timestamp="2026-05-17T08:18:04.662Z" hostname="api" tests="2" failures="0" skipped="0" time="0.951" errors="0">
-<testcase name="Cross-resource data integrity @regression › Every post returned for a user references that same userId" classname="data-integrity.spec.ts" time="0.851">
+<testsuites id="" name="" tests="45" failures="12" skipped="0" errors="0" time="5.41431">
+<testsuite name="bookings.spec.ts" timestamp="2026-05-17T10:57:34.266Z" hostname="api" tests="45" failures="12" skipped="0" time="28.414" errors="0">
+<testcase name="Booking API - GetBooking @booking › GET /booking returns list of booking IDs @smoke" classname="bookings.spec.ts" time="1.198">
 <system-out>
-<![CDATA[[2026-05-17T08:18:04.977Z]INFO -> GET /users/1{"headers":["Authorization"]}
-[2026-05-17T08:18:05.056Z]INFO <- GET /users/1 200 (78ms)
-[2026-05-17T08:18:05.059Z]INFO -> GET /users/1/posts{"headers":["Authorization"]}
-[2026-05-17T08:18:05.803Z]INFO <- GET /users/1/posts 200 (743ms)
+<![CDATA[[2026-05-17T10:57:34.598Z]INFO -> GET https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T10:57:35.766Z]INFO <- GET https://restful-booker.herokuapp.com/booking 200 (1168ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Cross-resource data integrity @regression › List of users contains no duplicate ids or emails" classname="data-integrity.spec.ts" time="0.1">
+<testcase name="Booking API - GetBooking @booking › GET /booking list contains valid booking IDs @smoke" classname="bookings.spec.ts" time="2.65">
 <system-out>
-<![CDATA[[2026-05-17T08:18:04.977Z]INFO -> GET /users{"headers":["Authorization"]}
-[2026-05-17T08:18:05.052Z]INFO <- GET /users 200 (75ms)
+<![CDATA[[2026-05-17T10:57:34.599Z]INFO -> GET https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T10:57:35.764Z]INFO <- GET https://restful-booker.herokuapp.com/booking 200 (1164ms)
 ]]>
 </system-out>
 </testcase>
-</testsuite>
-<testsuite name="example.spec.ts" timestamp="2026-05-17T08:18:04.662Z" hostname="api" tests="2" failures="0" skipped="0" time="1.971" errors="0">
-<testcase name="has title" classname="example.spec.ts" time="0.927">
-</testcase>
-<testcase name="get started link" classname="example.spec.ts" time="1.044">
-</testcase>
-</testsuite>
-<testsuite name="posts.spec.ts" timestamp="2026-05-17T08:18:04.662Z" hostname="api" tests="3" failures="0" skipped="0" time="1.691" errors="0">
-<testcase name="Posts API @smoke › GET /posts returns a valid list" classname="posts.spec.ts" time="0.799">
+<testcase name="Booking API - GetBooking @booking › GET /booking returns consistent response structure @smoke" classname="bookings.spec.ts" time="1.605">
 <system-out>
-<![CDATA[[2026-05-17T08:18:05.069Z]INFO -> GET /posts?_limit=10{"headers":["Authorization"]}
-[2026-05-17T08:18:05.846Z]INFO <- GET /posts?_limit=10 200 (776ms)
+<![CDATA[[2026-05-17T10:57:34.598Z]INFO -> GET https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T10:57:35.762Z]INFO <- GET https://restful-booker.herokuapp.com/booking 200 (1163ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Posts API @smoke › GET /posts filtered by userId returns only that user&apos;s posts" classname="posts.spec.ts" time="0.095">
+<testcase name="Booking API - GetBooking @booking › GET /booking with Content-Type application/json @smoke" classname="bookings.spec.ts" time="1.207">
 <system-out>
-<![CDATA[[2026-05-17T08:18:05.062Z]INFO -> GET /posts?userId=1{"headers":["Authorization"]}
-[2026-05-17T08:18:05.132Z]INFO <- GET /posts?userId=1 200 (69ms)
+<![CDATA[[2026-05-17T10:57:34.590Z]INFO -> GET https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T10:57:35.768Z]INFO <- GET https://restful-booker.herokuapp.com/booking 200 (1176ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Posts API @smoke › POST /posts creates a post" classname="posts.spec.ts" time="0.797">
+<testcase name="Booking API - GetBooking @booking › GET /booking/:id returns valid booking details @smoke" classname="bookings.spec.ts" time="0.994">
 <system-out>
-<![CDATA[[2026-05-17T08:18:05.067Z]INFO -> POST /posts{"headers":["Authorization"]}
-[2026-05-17T08:18:05.839Z]INFO <- POST /posts 201 (772ms)
+<![CDATA[[2026-05-17T10:57:34.586Z]INFO -> GET https://restful-booker.herokuapp.com/booking/1{"headers":["Authorization"]}
+[2026-05-17T10:57:35.545Z]INFO <- GET https://restful-booker.herokuapp.com/booking/1 404 (958ms)
+
+[[ATTACHMENT|../test-results/bookings-Booking-API---Get-61c4d-valid-booking-details-smoke-api/error-context.md]]
+
+[[ATTACHMENT|../test-results/bookings-Booking-API---Get-61c4d-valid-booking-details-smoke-api/trace.zip]]
+]]>
+</system-out>
+<failure message="Expected status 200 but got 404. Body: &quot;Not Found&quot;" type="expect.toContain">
+<![CDATA[  [api] › bookings.spec.ts:62:7 › Booking API - GetBooking @booking › GET /booking/:id returns valid booking details @smoke 
+
+    Error: Expected status 200 but got 404. Body: "Not Found"
+
+    expect(received).toContain(expected) // indexOf
+
+    Expected value: 404
+    Received array: [200]
+
+       at ../src/utils/assertions.ts:18
+
+      16 |     allowed,
+      17 |     `Expected status ${allowed.join(' or ')} but got ${response.status}. Body: ${JSON.stringify(response.body)}`,
+    > 18 |   ).toContain(response.status);
+         |     ^
+      19 | }
+      20 |
+      21 | export function assertSchema<T>(response: ApiResponse<unknown>, schema: ZodSchema<T>): T {
+        at assertStatus (/Users/vinayakm/Documents/TestVagrantWorkspace/Api/src/utils/assertions.ts:18:5)
+        at validateResponse (/Users/vinayakm/Documents/TestVagrantWorkspace/Api/src/utils/assertions.ts:62:3)
+        at /Users/vinayakm/Documents/TestVagrantWorkspace/Api/tests/bookings.spec.ts:65:37
+
+    Error Context: ../test-results/bookings-Booking-API---Get-61c4d-valid-booking-details-smoke-api/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/bookings-Booking-API---Get-61c4d-valid-booking-details-smoke-api/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/bookings-Booking-API---Get-61c4d-valid-booking-details-smoke-api/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="Booking API - GetBooking @booking › GET /booking/:id has correct firstname and lastname types @smoke" classname="bookings.spec.ts" time="0.986">
+<system-out>
+<![CDATA[[2026-05-17T10:57:34.599Z]INFO -> GET https://restful-booker.herokuapp.com/booking/1{"headers":["Authorization"]}
+[2026-05-17T10:57:35.548Z]INFO <- GET https://restful-booker.herokuapp.com/booking/1 404 (949ms)
+
+[[ATTACHMENT|../test-results/bookings-Booking-API---Get-76ca7-me-and-lastname-types-smoke-api/error-context.md]]
+
+[[ATTACHMENT|../test-results/bookings-Booking-API---Get-76ca7-me-and-lastname-types-smoke-api/trace.zip]]
+]]>
+</system-out>
+<failure message="Expected status 200 but got 404. Body: &quot;Not Found&quot;" type="expect.toContain">
+<![CDATA[  [api] › bookings.spec.ts:74:7 › Booking API - GetBooking @booking › GET /booking/:id has correct firstname and lastname types @smoke 
+
+    Error: Expected status 200 but got 404. Body: "Not Found"
+
+    expect(received).toContain(expected) // indexOf
+
+    Expected value: 404
+    Received array: [200]
+
+       at ../src/utils/assertions.ts:18
+
+      16 |     allowed,
+      17 |     `Expected status ${allowed.join(' or ')} but got ${response.status}. Body: ${JSON.stringify(response.body)}`,
+    > 18 |   ).toContain(response.status);
+         |     ^
+      19 | }
+      20 |
+      21 | export function assertSchema<T>(response: ApiResponse<unknown>, schema: ZodSchema<T>): T {
+        at assertStatus (/Users/vinayakm/Documents/TestVagrantWorkspace/Api/src/utils/assertions.ts:18:5)
+        at /Users/vinayakm/Documents/TestVagrantWorkspace/Api/tests/bookings.spec.ts:77:17
+
+    Error Context: ../test-results/bookings-Booking-API---Get-76ca7-me-and-lastname-types-smoke-api/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/bookings-Booking-API---Get-76ca7-me-and-lastname-types-smoke-api/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/bookings-Booking-API---Get-76ca7-me-and-lastname-types-smoke-api/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="Booking API - GetBooking @booking › GET /booking/:id totalprice is non-negative @smoke" classname="bookings.spec.ts" time="0.981">
+<system-out>
+<![CDATA[[2026-05-17T10:57:34.598Z]INFO -> GET https://restful-booker.herokuapp.com/booking/1{"headers":["Authorization"]}
+[2026-05-17T10:57:35.541Z]INFO <- GET https://restful-booker.herokuapp.com/booking/1 404 (943ms)
+
+[[ATTACHMENT|../test-results/bookings-Booking-API---Get-58039-price-is-non-negative-smoke-api/error-context.md]]
+
+[[ATTACHMENT|../test-results/bookings-Booking-API---Get-58039-price-is-non-negative-smoke-api/trace.zip]]
+]]>
+</system-out>
+<failure message="Expected status 200 but got 404. Body: &quot;Not Found&quot;" type="expect.toContain">
+<![CDATA[  [api] › bookings.spec.ts:86:7 › Booking API - GetBooking @booking › GET /booking/:id totalprice is non-negative @smoke 
+
+    Error: Expected status 200 but got 404. Body: "Not Found"
+
+    expect(received).toContain(expected) // indexOf
+
+    Expected value: 404
+    Received array: [200]
+
+       at ../src/utils/assertions.ts:18
+
+      16 |     allowed,
+      17 |     `Expected status ${allowed.join(' or ')} but got ${response.status}. Body: ${JSON.stringify(response.body)}`,
+    > 18 |   ).toContain(response.status);
+         |     ^
+      19 | }
+      20 |
+      21 | export function assertSchema<T>(response: ApiResponse<unknown>, schema: ZodSchema<T>): T {
+        at assertStatus (/Users/vinayakm/Documents/TestVagrantWorkspace/Api/src/utils/assertions.ts:18:5)
+        at /Users/vinayakm/Documents/TestVagrantWorkspace/Api/tests/bookings.spec.ts:89:17
+
+    Error Context: ../test-results/bookings-Booking-API---Get-58039-price-is-non-negative-smoke-api/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/bookings-Booking-API---Get-58039-price-is-non-negative-smoke-api/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/bookings-Booking-API---Get-58039-price-is-non-negative-smoke-api/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="Booking API - GetBooking @booking › GET /booking/:id depositpaid is boolean @smoke" classname="bookings.spec.ts" time="0.931">
+<system-out>
+<![CDATA[[2026-05-17T10:57:35.880Z]INFO -> GET https://restful-booker.herokuapp.com/booking/1{"headers":["Authorization"]}
+[2026-05-17T10:57:36.785Z]INFO <- GET https://restful-booker.herokuapp.com/booking/1 404 (905ms)
+
+[[ATTACHMENT|../test-results/bookings-Booking-API---Get-216a8-epositpaid-is-boolean-smoke-api/error-context.md]]
+
+[[ATTACHMENT|../test-results/bookings-Booking-API---Get-216a8-epositpaid-is-boolean-smoke-api/trace.zip]]
+]]>
+</system-out>
+<failure message="Expected status 200 but got 404. Body: &quot;Not Found&quot;" type="expect.toContain">
+<![CDATA[  [api] › bookings.spec.ts:96:7 › Booking API - GetBooking @booking › GET /booking/:id depositpaid is boolean @smoke 
+
+    Error: Expected status 200 but got 404. Body: "Not Found"
+
+    expect(received).toContain(expected) // indexOf
+
+    Expected value: 404
+    Received array: [200]
+
+       at ../src/utils/assertions.ts:18
+
+      16 |     allowed,
+      17 |     `Expected status ${allowed.join(' or ')} but got ${response.status}. Body: ${JSON.stringify(response.body)}`,
+    > 18 |   ).toContain(response.status);
+         |     ^
+      19 | }
+      20 |
+      21 | export function assertSchema<T>(response: ApiResponse<unknown>, schema: ZodSchema<T>): T {
+        at assertStatus (/Users/vinayakm/Documents/TestVagrantWorkspace/Api/src/utils/assertions.ts:18:5)
+        at /Users/vinayakm/Documents/TestVagrantWorkspace/Api/tests/bookings.spec.ts:99:17
+
+    Error Context: ../test-results/bookings-Booking-API---Get-216a8-epositpaid-is-boolean-smoke-api/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/bookings-Booking-API---Get-216a8-epositpaid-is-boolean-smoke-api/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/bookings-Booking-API---Get-216a8-epositpaid-is-boolean-smoke-api/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="Booking API - GetBooking @booking › GET /booking/:id bookingdates contains valid dates @smoke" classname="bookings.spec.ts" time="0.928">
+<system-out>
+<![CDATA[[2026-05-17T10:57:35.879Z]INFO -> GET https://restful-booker.herokuapp.com/booking/1{"headers":["Authorization"]}
+[2026-05-17T10:57:36.779Z]INFO <- GET https://restful-booker.herokuapp.com/booking/1 404 (900ms)
+
+[[ATTACHMENT|../test-results/bookings-Booking-API---Get-6bc7c--contains-valid-dates-smoke-api/error-context.md]]
+
+[[ATTACHMENT|../test-results/bookings-Booking-API---Get-6bc7c--contains-valid-dates-smoke-api/trace.zip]]
+]]>
+</system-out>
+<failure message="Expected status 200 but got 404. Body: &quot;Not Found&quot;" type="expect.toContain">
+<![CDATA[  [api] › bookings.spec.ts:105:7 › Booking API - GetBooking @booking › GET /booking/:id bookingdates contains valid dates @smoke 
+
+    Error: Expected status 200 but got 404. Body: "Not Found"
+
+    expect(received).toContain(expected) // indexOf
+
+    Expected value: 404
+    Received array: [200]
+
+       at ../src/utils/assertions.ts:18
+
+      16 |     allowed,
+      17 |     `Expected status ${allowed.join(' or ')} but got ${response.status}. Body: ${JSON.stringify(response.body)}`,
+    > 18 |   ).toContain(response.status);
+         |     ^
+      19 | }
+      20 |
+      21 | export function assertSchema<T>(response: ApiResponse<unknown>, schema: ZodSchema<T>): T {
+        at assertStatus (/Users/vinayakm/Documents/TestVagrantWorkspace/Api/src/utils/assertions.ts:18:5)
+        at /Users/vinayakm/Documents/TestVagrantWorkspace/Api/tests/bookings.spec.ts:108:17
+
+    Error Context: ../test-results/bookings-Booking-API---Get-6bc7c--contains-valid-dates-smoke-api/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/bookings-Booking-API---Get-6bc7c--contains-valid-dates-smoke-api/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/bookings-Booking-API---Get-6bc7c--contains-valid-dates-smoke-api/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="Booking API - GetBooking @booking › GET /booking/:id checkout date is after or equal to checkin date @smoke" classname="bookings.spec.ts" time="0.935">
+<system-out>
+<![CDATA[[2026-05-17T10:57:35.879Z]INFO -> GET https://restful-booker.herokuapp.com/booking/1{"headers":["Authorization"]}
+[2026-05-17T10:57:36.785Z]INFO <- GET https://restful-booker.herokuapp.com/booking/1 404 (905ms)
+
+[[ATTACHMENT|../test-results/bookings-Booking-API---Get-f3e02-equal-to-checkin-date-smoke-api/error-context.md]]
+
+[[ATTACHMENT|../test-results/bookings-Booking-API---Get-f3e02-equal-to-checkin-date-smoke-api/trace.zip]]
+]]>
+</system-out>
+<failure message="Expected status 200 but got 404. Body: &quot;Not Found&quot;" type="expect.toContain">
+<![CDATA[  [api] › bookings.spec.ts:121:7 › Booking API - GetBooking @booking › GET /booking/:id checkout date is after or equal to checkin date @smoke 
+
+    Error: Expected status 200 but got 404. Body: "Not Found"
+
+    expect(received).toContain(expected) // indexOf
+
+    Expected value: 404
+    Received array: [200]
+
+       at ../src/utils/assertions.ts:18
+
+      16 |     allowed,
+      17 |     `Expected status ${allowed.join(' or ')} but got ${response.status}. Body: ${JSON.stringify(response.body)}`,
+    > 18 |   ).toContain(response.status);
+         |     ^
+      19 | }
+      20 |
+      21 | export function assertSchema<T>(response: ApiResponse<unknown>, schema: ZodSchema<T>): T {
+        at assertStatus (/Users/vinayakm/Documents/TestVagrantWorkspace/Api/src/utils/assertions.ts:18:5)
+        at /Users/vinayakm/Documents/TestVagrantWorkspace/Api/tests/bookings.spec.ts:124:17
+
+    Error Context: ../test-results/bookings-Booking-API---Get-f3e02-equal-to-checkin-date-smoke-api/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/bookings-Booking-API---Get-f3e02-equal-to-checkin-date-smoke-api/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/bookings-Booking-API---Get-f3e02-equal-to-checkin-date-smoke-api/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="Booking API - GetBooking @booking › GET /booking/:id additionalneeds is optional @smoke" classname="bookings.spec.ts" time="0.233">
+<system-out>
+<![CDATA[[2026-05-17T10:57:35.789Z]INFO -> GET https://restful-booker.herokuapp.com/booking/1{"headers":["Authorization"]}
+[2026-05-17T10:57:36.010Z]INFO <- GET https://restful-booker.herokuapp.com/booking/1 404 (220ms)
+
+[[ATTACHMENT|../test-results/bookings-Booking-API---Get-e6808-onalneeds-is-optional-smoke-api/error-context.md]]
+
+[[ATTACHMENT|../test-results/bookings-Booking-API---Get-e6808-onalneeds-is-optional-smoke-api/trace.zip]]
+]]>
+</system-out>
+<failure message="Expected status 200 but got 404. Body: &quot;Not Found&quot;" type="expect.toContain">
+<![CDATA[  [api] › bookings.spec.ts:133:7 › Booking API - GetBooking @booking › GET /booking/:id additionalneeds is optional @smoke 
+
+    Error: Expected status 200 but got 404. Body: "Not Found"
+
+    expect(received).toContain(expected) // indexOf
+
+    Expected value: 404
+    Received array: [200]
+
+       at ../src/utils/assertions.ts:18
+
+      16 |     allowed,
+      17 |     `Expected status ${allowed.join(' or ')} but got ${response.status}. Body: ${JSON.stringify(response.body)}`,
+    > 18 |   ).toContain(response.status);
+         |     ^
+      19 | }
+      20 |
+      21 | export function assertSchema<T>(response: ApiResponse<unknown>, schema: ZodSchema<T>): T {
+        at assertStatus (/Users/vinayakm/Documents/TestVagrantWorkspace/Api/src/utils/assertions.ts:18:5)
+        at /Users/vinayakm/Documents/TestVagrantWorkspace/Api/tests/bookings.spec.ts:136:17
+
+    Error Context: ../test-results/bookings-Booking-API---Get-e6808-onalneeds-is-optional-smoke-api/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/bookings-Booking-API---Get-e6808-onalneeds-is-optional-smoke-api/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/bookings-Booking-API---Get-e6808-onalneeds-is-optional-smoke-api/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="Booking API - GetBooking @booking › GET /booking/:id response contains only expected fields @smoke" classname="bookings.spec.ts" time="0.231">
+<system-out>
+<![CDATA[[2026-05-17T10:57:35.789Z]INFO -> GET https://restful-booker.herokuapp.com/booking/1{"headers":["Authorization"]}
+[2026-05-17T10:57:36.010Z]INFO <- GET https://restful-booker.herokuapp.com/booking/1 404 (220ms)
+
+[[ATTACHMENT|../test-results/bookings-Booking-API---Get-4d155--only-expected-fields-smoke-api/error-context.md]]
+
+[[ATTACHMENT|../test-results/bookings-Booking-API---Get-4d155--only-expected-fields-smoke-api/trace.zip]]
+]]>
+</system-out>
+<failure message="Expected status 200 but got 404. Body: &quot;Not Found&quot;" type="expect.toContain">
+<![CDATA[  [api] › bookings.spec.ts:145:7 › Booking API - GetBooking @booking › GET /booking/:id response contains only expected fields @smoke 
+
+    Error: Expected status 200 but got 404. Body: "Not Found"
+
+    expect(received).toContain(expected) // indexOf
+
+    Expected value: 404
+    Received array: [200]
+
+       at ../src/utils/assertions.ts:18
+
+      16 |     allowed,
+      17 |     `Expected status ${allowed.join(' or ')} but got ${response.status}. Body: ${JSON.stringify(response.body)}`,
+    > 18 |   ).toContain(response.status);
+         |     ^
+      19 | }
+      20 |
+      21 | export function assertSchema<T>(response: ApiResponse<unknown>, schema: ZodSchema<T>): T {
+        at assertStatus (/Users/vinayakm/Documents/TestVagrantWorkspace/Api/src/utils/assertions.ts:18:5)
+        at /Users/vinayakm/Documents/TestVagrantWorkspace/Api/tests/bookings.spec.ts:148:17
+
+    Error Context: ../test-results/bookings-Booking-API---Get-4d155--only-expected-fields-smoke-api/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/bookings-Booking-API---Get-4d155--only-expected-fields-smoke-api/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/bookings-Booking-API---Get-4d155--only-expected-fields-smoke-api/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="Booking API - GetBooking @booking › GET /booking/:id with string ID that is numeric @regression" classname="bookings.spec.ts" time="0.923">
+<system-out>
+<![CDATA[[2026-05-17T10:57:36.323Z]INFO -> GET https://restful-booker.herokuapp.com/booking/1{"headers":["Authorization"]}
+[2026-05-17T10:57:37.220Z]INFO <- GET https://restful-booker.herokuapp.com/booking/1 404 (897ms)
+
+[[ATTACHMENT|../test-results/bookings-Booking-API---Get-0947b--that-is-numeric-regression-api/error-context.md]]
+
+[[ATTACHMENT|../test-results/bookings-Booking-API---Get-0947b--that-is-numeric-regression-api/trace.zip]]
+]]>
+</system-out>
+<failure message="Expected status 200 but got 404. Body: &quot;Not Found&quot;" type="expect.toContain">
+<![CDATA[  [api] › bookings.spec.ts:159:7 › Booking API - GetBooking @booking › GET /booking/:id with string ID that is numeric @regression 
+
+    Error: Expected status 200 but got 404. Body: "Not Found"
+
+    expect(received).toContain(expected) // indexOf
+
+    Expected value: 404
+    Received array: [200]
+
+       at ../src/utils/assertions.ts:18
+
+      16 |     allowed,
+      17 |     `Expected status ${allowed.join(' or ')} but got ${response.status}. Body: ${JSON.stringify(response.body)}`,
+    > 18 |   ).toContain(response.status);
+         |     ^
+      19 | }
+      20 |
+      21 | export function assertSchema<T>(response: ApiResponse<unknown>, schema: ZodSchema<T>): T {
+        at assertStatus (/Users/vinayakm/Documents/TestVagrantWorkspace/Api/src/utils/assertions.ts:18:5)
+        at /Users/vinayakm/Documents/TestVagrantWorkspace/Api/tests/bookings.spec.ts:162:17
+
+    Error Context: ../test-results/bookings-Booking-API---Get-0947b--that-is-numeric-regression-api/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/bookings-Booking-API---Get-0947b--that-is-numeric-regression-api/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/bookings-Booking-API---Get-0947b--that-is-numeric-regression-api/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="Booking API - GetBooking @booking › GET /booking/:id with valid Accept header application/json @regression" classname="bookings.spec.ts" time="0.925">
+<system-out>
+<![CDATA[[2026-05-17T10:57:36.323Z]INFO -> GET https://restful-booker.herokuapp.com/booking/1{"headers":["Authorization","Accept"]}
+[2026-05-17T10:57:37.222Z]INFO <- GET https://restful-booker.herokuapp.com/booking/1 404 (898ms)
+
+[[ATTACHMENT|../test-results/bookings-Booking-API---Get-18161-application-json-regression-api/error-context.md]]
+
+[[ATTACHMENT|../test-results/bookings-Booking-API---Get-18161-application-json-regression-api/trace.zip]]
+]]>
+</system-out>
+<failure message="Expected status 200 but got 404. Body: &quot;Not Found&quot;" type="expect.toContain">
+<![CDATA[  [api] › bookings.spec.ts:167:7 › Booking API - GetBooking @booking › GET /booking/:id with valid Accept header application/json @regression 
+
+    Error: Expected status 200 but got 404. Body: "Not Found"
+
+    expect(received).toContain(expected) // indexOf
+
+    Expected value: 404
+    Received array: [200]
+
+       at ../src/utils/assertions.ts:18
+
+      16 |     allowed,
+      17 |     `Expected status ${allowed.join(' or ')} but got ${response.status}. Body: ${JSON.stringify(response.body)}`,
+    > 18 |   ).toContain(response.status);
+         |     ^
+      19 | }
+      20 |
+      21 | export function assertSchema<T>(response: ApiResponse<unknown>, schema: ZodSchema<T>): T {
+        at assertStatus (/Users/vinayakm/Documents/TestVagrantWorkspace/Api/src/utils/assertions.ts:18:5)
+        at /Users/vinayakm/Documents/TestVagrantWorkspace/Api/tests/bookings.spec.ts:170:17
+
+    Error Context: ../test-results/bookings-Booking-API---Get-18161-application-json-regression-api/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/bookings-Booking-API---Get-18161-application-json-regression-api/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/bookings-Booking-API---Get-18161-application-json-regression-api/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="Booking API - GetBooking @booking › GET /booking/:id response time is acceptable @performance" classname="bookings.spec.ts" time="0.224">
+<system-out>
+<![CDATA[[2026-05-17T10:57:36.230Z]INFO -> GET https://restful-booker.herokuapp.com/booking/1{"headers":["Authorization"]}
+[2026-05-17T10:57:36.452Z]INFO <- GET https://restful-booker.herokuapp.com/booking/1 404 (221ms)
 ]]>
 </system-out>
 </testcase>
-</testsuite>
-<testsuite name="users.spec.ts" timestamp="2026-05-17T08:18:04.662Z" hostname="api" tests="6" failures="0" skipped="0" time="1.797" errors="0">
-<testcase name="Users API @smoke › GET /users returns a valid list" classname="users.spec.ts" time="0.027">
+<testcase name="Booking API - GetBooking @booking › GET /booking with firstname filter @regression" classname="bookings.spec.ts" time="0.227">
 <system-out>
-<![CDATA[[2026-05-17T08:18:05.168Z]INFO -> GET /users{"headers":["Authorization"]}
-[2026-05-17T08:18:05.187Z]INFO <- GET /users 200 (19ms)
+<![CDATA[[2026-05-17T10:57:36.458Z]INFO -> GET https://restful-booker.herokuapp.com/booking/1{"headers":["Authorization"]}
+[2026-05-17T10:57:36.676Z]INFO <- GET https://restful-booker.herokuapp.com/booking/1 404 (217ms)
+
+[[ATTACHMENT|../test-results/bookings-Booking-API---Get-bcf1a-firstname-filter-regression-api/error-context.md]]
+
+[[ATTACHMENT|../test-results/bookings-Booking-API---Get-bcf1a-firstname-filter-regression-api/trace.zip]]
+]]>
+</system-out>
+<failure message="Expected status 200 but got 404. Body: &quot;Not Found&quot;" type="expect.toContain">
+<![CDATA[  [api] › bookings.spec.ts:185:7 › Booking API - GetBooking @booking › GET /booking with firstname filter @regression 
+
+    Error: Expected status 200 but got 404. Body: "Not Found"
+
+    expect(received).toContain(expected) // indexOf
+
+    Expected value: 404
+    Received array: [200]
+
+       at ../src/utils/assertions.ts:18
+
+      16 |     allowed,
+      17 |     `Expected status ${allowed.join(' or ')} but got ${response.status}. Body: ${JSON.stringify(response.body)}`,
+    > 18 |   ).toContain(response.status);
+         |     ^
+      19 | }
+      20 |
+      21 | export function assertSchema<T>(response: ApiResponse<unknown>, schema: ZodSchema<T>): T {
+        at assertStatus (/Users/vinayakm/Documents/TestVagrantWorkspace/Api/src/utils/assertions.ts:18:5)
+        at /Users/vinayakm/Documents/TestVagrantWorkspace/Api/tests/bookings.spec.ts:188:17
+
+    Error Context: ../test-results/bookings-Booking-API---Get-bcf1a-firstname-filter-regression-api/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/bookings-Booking-API---Get-bcf1a-firstname-filter-regression-api/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/bookings-Booking-API---Get-bcf1a-firstname-filter-regression-api/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="Booking API - GetBooking @booking › GET /booking with lastname filter @regression" classname="bookings.spec.ts" time="0.946">
+<system-out>
+<![CDATA[[2026-05-17T10:57:36.990Z]INFO -> GET https://restful-booker.herokuapp.com/booking/1{"headers":["Authorization"]}
+[2026-05-17T10:57:37.902Z]INFO <- GET https://restful-booker.herokuapp.com/booking/1 404 (911ms)
+
+[[ATTACHMENT|../test-results/bookings-Booking-API---Get-5a04e--lastname-filter-regression-api/error-context.md]]
+
+[[ATTACHMENT|../test-results/bookings-Booking-API---Get-5a04e--lastname-filter-regression-api/trace.zip]]
+]]>
+</system-out>
+<failure message="Expected status 200 but got 404. Body: &quot;Not Found&quot;" type="expect.toContain">
+<![CDATA[  [api] › bookings.spec.ts:199:7 › Booking API - GetBooking @booking › GET /booking with lastname filter @regression 
+
+    Error: Expected status 200 but got 404. Body: "Not Found"
+
+    expect(received).toContain(expected) // indexOf
+
+    Expected value: 404
+    Received array: [200]
+
+       at ../src/utils/assertions.ts:18
+
+      16 |     allowed,
+      17 |     `Expected status ${allowed.join(' or ')} but got ${response.status}. Body: ${JSON.stringify(response.body)}`,
+    > 18 |   ).toContain(response.status);
+         |     ^
+      19 | }
+      20 |
+      21 | export function assertSchema<T>(response: ApiResponse<unknown>, schema: ZodSchema<T>): T {
+        at assertStatus (/Users/vinayakm/Documents/TestVagrantWorkspace/Api/src/utils/assertions.ts:18:5)
+        at /Users/vinayakm/Documents/TestVagrantWorkspace/Api/tests/bookings.spec.ts:202:17
+
+    Error Context: ../test-results/bookings-Booking-API---Get-5a04e--lastname-filter-regression-api/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/bookings-Booking-API---Get-5a04e--lastname-filter-regression-api/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/bookings-Booking-API---Get-5a04e--lastname-filter-regression-api/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="Booking API - GetBooking @booking › GET /booking with checkin date filter @regression" classname="bookings.spec.ts" time="1.142">
+<system-out>
+<![CDATA[[2026-05-17T10:57:37.098Z]INFO -> GET https://restful-booker.herokuapp.com/booking?checkin=2013-02-23{"headers":["Authorization"]}
+[2026-05-17T10:57:38.221Z]INFO <- GET https://restful-booker.herokuapp.com/booking?checkin=2013-02-23 200 (1123ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Users API @smoke › GET /users/:id returns a single valid user" classname="users.spec.ts" time="0.024">
+<testcase name="Booking API - GetBooking @booking › GET /booking with checkout date filter @regression" classname="bookings.spec.ts" time="0.908">
 <system-out>
-<![CDATA[[2026-05-17T08:18:05.150Z]INFO -> GET /users/1{"headers":["Authorization"]}
-[2026-05-17T08:18:05.171Z]INFO <- GET /users/1 200 (19ms)
+<![CDATA[[2026-05-17T10:57:37.104Z]INFO -> GET https://restful-booker.herokuapp.com/booking?checkout=2014-10-23{"headers":["Authorization"]}
+[2026-05-17T10:57:37.992Z]INFO <- GET https://restful-booker.herokuapp.com/booking?checkout=2014-10-23 200 (888ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Users API @smoke › GET /users/:id with non-existent id returns 404" classname="users.spec.ts" time="0.024">
+<testcase name="Booking API - GetBooking @booking › GET /booking with multiple filters @regression" classname="bookings.spec.ts" time="0.914">
 <system-out>
-<![CDATA[[2026-05-17T08:18:05.180Z]INFO -> GET /users/99999{"headers":["Authorization"]}
-[2026-05-17T08:18:05.200Z]INFO <- GET /users/99999 404 (20ms)
+<![CDATA[[2026-05-17T10:57:37.106Z]INFO -> GET https://restful-booker.herokuapp.com/booking?firstname=John&lastname=Doe{"headers":["Authorization"]}
+[2026-05-17T10:57:38.001Z]INFO <- GET https://restful-booker.herokuapp.com/booking?firstname=John&lastname=Doe 200 (894ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Users API @smoke › POST /users creates a user and echoes payload @regression" classname="users.spec.ts" time="0.721">
+<testcase name="Booking API - GetBooking @booking › GET /booking/:id with non-existent ID returns 404 @regression" classname="bookings.spec.ts" time="0.934">
 <system-out>
-<![CDATA[[2026-05-17T08:18:05.203Z]INFO -> POST /users{"headers":["Authorization"]}
-[2026-05-17T08:18:05.919Z]INFO <- POST /users 201 (715ms)
+<![CDATA[[2026-05-17T10:57:37.530Z]INFO -> GET https://restful-booker.herokuapp.com/booking/999999{"headers":["Authorization"]}
+[2026-05-17T10:57:38.443Z]INFO <- GET https://restful-booker.herokuapp.com/booking/999999 404 (912ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Users API @smoke › PUT /users/:id updates and returns the updated resource @regression" classname="users.spec.ts" time="0.265">
+<testcase name="Booking API - GetBooking @booking › GET /booking/:id with ID 0 @edge-case" classname="bookings.spec.ts" time="0.934">
 <system-out>
-<![CDATA[[2026-05-17T08:18:05.211Z]INFO -> PUT /users/1{"headers":["Authorization"]}
-[2026-05-17T08:18:05.470Z]INFO <- PUT /users/1 200 (259ms)
+<![CDATA[[2026-05-17T10:57:37.530Z]INFO -> GET https://restful-booker.herokuapp.com/booking/0{"headers":["Authorization"]}
+[2026-05-17T10:57:38.442Z]INFO <- GET https://restful-booker.herokuapp.com/booking/0 404 (911ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Users API @smoke › DELETE /users/:id returns success @regression" classname="users.spec.ts" time="0.736">
+<testcase name="Booking API - GetBooking @booking › GET /booking/:id with negative ID @edge-case" classname="bookings.spec.ts" time="0.224">
 <system-out>
-<![CDATA[[2026-05-17T08:18:05.480Z]INFO -> DELETE /users/1{"headers":["Authorization"]}
-[2026-05-17T08:18:06.215Z]INFO <- DELETE /users/1 200 (735ms)
+<![CDATA[[2026-05-17T10:57:37.315Z]INFO -> GET https://restful-booker.herokuapp.com/booking/-1{"headers":["Authorization"]}
+[2026-05-17T10:57:37.536Z]INFO <- GET https://restful-booker.herokuapp.com/booking/-1 404 (221ms)
+]]>
+</system-out>
+</testcase>
+<testcase name="Booking API - GetBooking @booking › GET /booking/:id with extremely large ID @edge-case" classname="bookings.spec.ts" time="0.226">
+<system-out>
+<![CDATA[[2026-05-17T10:57:37.543Z]INFO -> GET https://restful-booker.herokuapp.com/booking/999999999999{"headers":["Authorization"]}
+[2026-05-17T10:57:37.767Z]INFO <- GET https://restful-booker.herokuapp.com/booking/999999999999 404 (223ms)
+]]>
+</system-out>
+</testcase>
+<testcase name="Booking API - GetBooking @booking › GET /booking/:id with non-numeric ID returns error @regression" classname="bookings.spec.ts" time="0.229">
+<system-out>
+<![CDATA[[2026-05-17T10:57:37.777Z]INFO -> GET https://restful-booker.herokuapp.com/booking/abc{"headers":["Authorization"]}
+[2026-05-17T10:57:38.004Z]INFO <- GET https://restful-booker.herokuapp.com/booking/abc 404 (227ms)
+]]>
+</system-out>
+</testcase>
+<testcase name="Booking API - GetBooking @booking › GET /booking/:id with special characters in ID @security" classname="bookings.spec.ts" time="0.924">
+<system-out>
+<![CDATA[[2026-05-17T10:57:38.197Z]INFO -> GET https://restful-booker.herokuapp.com/booking/1'; DROP TABLE bookings; --{"headers":["Authorization"]}
+[2026-05-17T10:57:39.101Z]INFO <- GET https://restful-booker.herokuapp.com/booking/1'; DROP TABLE bookings; -- 404 (903ms)
+]]>
+</system-out>
+</testcase>
+<testcase name="Booking API - GetBooking @booking › GET /booking/:id with path traversal attempt @security" classname="bookings.spec.ts" time="0.223">
+<system-out>
+<![CDATA[[2026-05-17T10:57:38.005Z]INFO -> GET https://restful-booker.herokuapp.com/booking/../../../etc/passwd{"headers":["Authorization"]}
+[2026-05-17T10:57:38.224Z]INFO <- GET https://restful-booker.herokuapp.com/booking/../../../etc/passwd 404 (218ms)
+]]>
+</system-out>
+</testcase>
+<testcase name="Booking API - GetBooking @booking › GET /booking/:id with whitespace ID @edge-case" classname="bookings.spec.ts" time="0.663">
+<system-out>
+<![CDATA[[2026-05-17T10:57:38.010Z]INFO -> GET https://restful-booker.herokuapp.com/booking/   {"headers":["Authorization"]}
+[2026-05-17T10:57:38.669Z]INFO <- GET https://restful-booker.herokuapp.com/booking/    200 (658ms)
+]]>
+</system-out>
+</testcase>
+<testcase name="Booking API - GetBooking @booking › GET /booking/:id with empty string @edge-case" classname="bookings.spec.ts" time="0.445">
+<system-out>
+<![CDATA[[2026-05-17T10:57:38.012Z]INFO -> GET https://restful-booker.herokuapp.com/booking/{"headers":["Authorization"]}
+[2026-05-17T10:57:38.455Z]INFO <- GET https://restful-booker.herokuapp.com/booking/ 200 (442ms)
+]]>
+</system-out>
+</testcase>
+<testcase name="Booking API - GetBooking @booking › GET /booking/:id with decimal ID @edge-case" classname="bookings.spec.ts" time="0.222">
+<system-out>
+<![CDATA[[2026-05-17T10:57:38.230Z]INFO -> GET https://restful-booker.herokuapp.com/booking/1.5{"headers":["Authorization"]}
+[2026-05-17T10:57:38.450Z]INFO <- GET https://restful-booker.herokuapp.com/booking/1.5 404 (220ms)
+]]>
+</system-out>
+</testcase>
+<testcase name="Booking API - GetBooking @booking › GET /booking/:id with hexadecimal ID @edge-case" classname="bookings.spec.ts" time="0.227">
+<system-out>
+<![CDATA[[2026-05-17T10:57:38.234Z]INFO -> GET https://restful-booker.herokuapp.com/booking/0x1A{"headers":["Authorization"]}
+[2026-05-17T10:57:38.457Z]INFO <- GET https://restful-booker.herokuapp.com/booking/0x1A 404 (223ms)
+]]>
+</system-out>
+</testcase>
+<testcase name="Booking API - GetBooking @booking › GET /booking with non-existent firstname returns empty list @regression" classname="bookings.spec.ts" time="0.229">
+<system-out>
+<![CDATA[[2026-05-17T10:57:38.459Z]INFO -> GET https://restful-booker.herokuapp.com/booking?firstname=NonExistentFirstname12345{"headers":["Authorization"]}
+[2026-05-17T10:57:38.682Z]INFO <- GET https://restful-booker.herokuapp.com/booking?firstname=NonExistentFirstname12345 200 (222ms)
+]]>
+</system-out>
+</testcase>
+<testcase name="Booking API - GetBooking @booking › GET /booking with non-existent lastname returns empty list @regression" classname="bookings.spec.ts" time="0.234">
+<system-out>
+<![CDATA[[2026-05-17T10:57:38.459Z]INFO -> GET https://restful-booker.herokuapp.com/booking?lastname=NonExistentLastname12345{"headers":["Authorization"]}
+[2026-05-17T10:57:38.687Z]INFO <- GET https://restful-booker.herokuapp.com/booking?lastname=NonExistentLastname12345 200 (227ms)
+]]>
+</system-out>
+</testcase>
+<testcase name="Booking API - GetBooking @booking › GET /booking with invalid checkin date format @regression" classname="bookings.spec.ts" time="0.225">
+<system-out>
+<![CDATA[[2026-05-17T10:57:38.460Z]INFO -> GET https://restful-booker.herokuapp.com/booking?checkin=invalid-date{"headers":["Authorization"]}
+[2026-05-17T10:57:38.678Z]INFO <- GET https://restful-booker.herokuapp.com/booking?checkin=invalid-date 500 (217ms)
+]]>
+</system-out>
+</testcase>
+<testcase name="Booking API - GetBooking @booking › GET /booking with invalid checkout date format @regression" classname="bookings.spec.ts" time="0.232">
+<system-out>
+<![CDATA[[2026-05-17T10:57:38.465Z]INFO -> GET https://restful-booker.herokuapp.com/booking?checkout=invalid-date{"headers":["Authorization"]}
+[2026-05-17T10:57:38.692Z]INFO <- GET https://restful-booker.herokuapp.com/booking?checkout=invalid-date 500 (225ms)
+]]>
+</system-out>
+</testcase>
+<testcase name="Booking API - GetBooking @booking › GET /booking with SQL injection in firstname filter @security" classname="bookings.spec.ts" time="0.227">
+<system-out>
+<![CDATA[[2026-05-17T10:57:38.467Z]INFO -> GET https://restful-booker.herokuapp.com/booking?firstname=%27%3B+DROP+TABLE+bookings%3B+--{"headers":["Authorization"]}
+[2026-05-17T10:57:38.690Z]INFO <- GET https://restful-booker.herokuapp.com/booking?firstname=%27%3B+DROP+TABLE+bookings%3B+-- 200 (223ms)
+]]>
+</system-out>
+</testcase>
+<testcase name="Booking API - GetBooking @booking › GET /booking with SQL injection in lastname filter @security" classname="bookings.spec.ts" time="0.225">
+<system-out>
+<![CDATA[[2026-05-17T10:57:38.682Z]INFO -> GET https://restful-booker.herokuapp.com/booking?lastname=%27+OR+%271%27%3D%271{"headers":["Authorization"]}
+[2026-05-17T10:57:38.904Z]INFO <- GET https://restful-booker.herokuapp.com/booking?lastname=%27+OR+%271%27%3D%271 200 (222ms)
+]]>
+</system-out>
+</testcase>
+<testcase name="Booking API - GetBooking @booking › GET /booking with very long firstname filter @edge-case" classname="bookings.spec.ts" time="0.222">
+<system-out>
+<![CDATA[[2026-05-17T10:57:38.693Z]INFO -> GET https://restful-booker.herokuapp.com/booking?firstname=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa{"headers":["Authorization"]}
+[2026-05-17T10:57:38.912Z]INFO <- GET https://restful-booker.herokuapp.com/booking?firstname=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa 200 (219ms)
+]]>
+</system-out>
+</testcase>
+<testcase name="Booking API - GetBooking @booking › GET /booking with very long lastname filter @edge-case" classname="bookings.spec.ts" time="0.224">
+<system-out>
+<![CDATA[[2026-05-17T10:57:38.699Z]INFO -> GET https://restful-booker.herokuapp.com/booking?lastname=bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb{"headers":["Authorization"]}
+[2026-05-17T10:57:38.918Z]INFO <- GET https://restful-booker.herokuapp.com/booking?lastname=bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb 200 (218ms)
+]]>
+</system-out>
+</testcase>
+<testcase name="Booking API - GetBooking @booking › GET /booking with unicode characters in firstname filter @edge-case" classname="bookings.spec.ts" time="0.224">
+<system-out>
+<![CDATA[[2026-05-17T10:57:38.702Z]INFO -> GET https://restful-booker.herokuapp.com/booking?firstname=%E7%94%A8%E6%88%B7%E5%90%8D{"headers":["Authorization"]}
+[2026-05-17T10:57:38.922Z]INFO <- GET https://restful-booker.herokuapp.com/booking?firstname=%E7%94%A8%E6%88%B7%E5%90%8D 200 (218ms)
+]]>
+</system-out>
+</testcase>
+<testcase name="Booking API - GetBooking @booking › GET /booking with special characters in lastname filter @edge-case" classname="bookings.spec.ts" time="0.223">
+<system-out>
+<![CDATA[[2026-05-17T10:57:38.703Z]INFO -> GET https://restful-booker.herokuapp.com/booking?lastname=%40%23%24%25%5E%26*%28%29{"headers":["Authorization"]}
+[2026-05-17T10:57:38.922Z]INFO <- GET https://restful-booker.herokuapp.com/booking?lastname=%40%23%24%25%5E%26*%28%29 200 (217ms)
+]]>
+</system-out>
+</testcase>
+<testcase name="Booking API - GetBooking @booking › GET /booking filter is case-sensitive @regression" classname="bookings.spec.ts" time="0.444">
+<system-out>
+<![CDATA[[2026-05-17T10:57:38.703Z]INFO -> GET https://restful-booker.herokuapp.com/booking?firstname=john{"headers":["Authorization"]}
+[2026-05-17T10:57:38.922Z]INFO <- GET https://restful-booker.herokuapp.com/booking?firstname=john 200 (219ms)
+[2026-05-17T10:57:38.922Z]INFO -> GET https://restful-booker.herokuapp.com/booking?firstname=JOHN{"headers":["Authorization"]}
+[2026-05-17T10:57:39.143Z]INFO <- GET https://restful-booker.herokuapp.com/booking?firstname=JOHN 200 (219ms)
+]]>
+</system-out>
+</testcase>
+<testcase name="Booking API - GetBooking @booking › GET /booking list response time is acceptable @performance" classname="bookings.spec.ts" time="0.444">
+<system-out>
+<![CDATA[[2026-05-17T10:57:38.913Z]INFO -> GET https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T10:57:39.354Z]INFO <- GET https://restful-booker.herokuapp.com/booking 200 (440ms)
+]]>
+</system-out>
+</testcase>
+<testcase name="Booking API - GetBooking @booking › GET /booking with all filters combined @regression" classname="bookings.spec.ts" time="0.22">
+<system-out>
+<![CDATA[[2026-05-17T10:57:38.922Z]INFO -> GET https://restful-booker.herokuapp.com/booking?firstname=John&lastname=Doe&checkin=2013-02-23&checkout=2014-10-23{"headers":["Authorization"]}
+[2026-05-17T10:57:39.139Z]INFO <- GET https://restful-booker.herokuapp.com/booking?firstname=John&lastname=Doe&checkin=2013-02-23&checkout=2014-10-23 200 (217ms)
+]]>
+</system-out>
+</testcase>
+<testcase name="Booking API - GetBooking @booking › GET /booking multiple calls return consistent results @regression" classname="bookings.spec.ts" time="0.702">
+<system-out>
+<![CDATA[[2026-05-17T10:57:38.928Z]INFO -> GET https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T10:57:39.369Z]INFO <- GET https://restful-booker.herokuapp.com/booking 200 (440ms)
+[2026-05-17T10:57:39.369Z]INFO -> GET https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T10:57:39.623Z]INFO <- GET https://restful-booker.herokuapp.com/booking 200 (253ms)
 ]]>
 </system-out>
 </testcase>

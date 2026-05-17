@@ -1,0 +1,4 @@
+[2026-05-17T10:52:27.092Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T10:52:27.312Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (219ms)
+[2026-05-17T10:52:27.313Z]INFO -> PUT https://restful-booker.herokuapp.com/booking/abc{"headers":["Authorization","Cookie"]}
+[2026-05-17T10:52:27.536Z]INFO <- PUT https://restful-booker.herokuapp.com/booking/abc 405 (224ms)

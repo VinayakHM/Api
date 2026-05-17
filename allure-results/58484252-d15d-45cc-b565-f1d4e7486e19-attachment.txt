@@ -1,0 +1,4 @@
+[2026-05-17T10:49:22.700Z]INFO -> GET https://restful-booker.herokuapp.com/booking?firstname=john{"headers":["Authorization"]}
+[2026-05-17T10:49:22.917Z]INFO <- GET https://restful-booker.herokuapp.com/booking?firstname=john 200 (216ms)
+[2026-05-17T10:49:22.917Z]INFO -> GET https://restful-booker.herokuapp.com/booking?firstname=JOHN{"headers":["Authorization"]}
+[2026-05-17T10:49:23.135Z]INFO <- GET https://restful-booker.herokuapp.com/booking?firstname=JOHN 200 (218ms)

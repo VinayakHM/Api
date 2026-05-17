@@ -1,10 +1,14 @@
 import { test as base } from "@playwright/test";
 import { UsersClient } from "../clients/users.client";
 import { PostsClient } from "../clients/posts.client";
+import { AuthClient } from "../clients/auth.client";
+import { BookingClient } from "../clients/booking.client";
 
 interface ApiFixtures {
   usersClient: UsersClient;
   postsClient: PostsClient;
+  authClient: AuthClient;
+  bookingClient: BookingClient;
 }
 
 /**
@@ -21,6 +25,12 @@ export const test = base.extend<ApiFixtures>({
   },
   postsClient: async ({ request }, use) => {
     await use(new PostsClient(request));
+  },
+  authClient: async ({ request }, use) => {
+    await use(new AuthClient(request));
+  },
+  bookingClient: async ({ request }, use) => {
+    await use(new BookingClient(request));
   },
 });
 

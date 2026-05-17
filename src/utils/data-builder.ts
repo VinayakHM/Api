@@ -1,6 +1,7 @@
 import { faker } from "@faker-js/faker";
 import { NewUser } from "../schemas/user.schema";
 import { NewPost } from "../schemas/post.schema";
+import { Booking } from "../schemas/booking.schema";
 
 export function buildNewUser(overrides: Partial<NewUser>): NewUser {
   return {
@@ -33,6 +34,24 @@ export function buildNewPost(overrides: Partial<NewPost> = {}): NewPost {
     userId: faker.number.int({ min: 1, max: 10 }),
     title: faker.lorem.sentence(),
     body: faker.lorem.paragraph(),
+    ...overrides,
+  };
+}
+
+export function buildNewBooking(overrides: Partial<Booking> = {}): Booking {
+  const checkin = faker.date.future();
+  const checkout = faker.date.future({ refDate: checkin });
+
+  return {
+    firstname: faker.person.firstName(),
+    lastname: faker.person.lastName(),
+    totalprice: faker.number.int({ min: 0, max: 5000 }),
+    depositpaid: faker.datatype.boolean(),
+    bookingdates: {
+      checkin: checkin.toISOString().split('T')[0],
+      checkout: checkout.toISOString().split('T')[0],
+    },
+    additionalneeds: faker.lorem.words(2),
     ...overrides,
   };
 }

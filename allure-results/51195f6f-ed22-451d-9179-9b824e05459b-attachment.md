@@ -1,0 +1,226 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: bookings.spec.ts >> Booking API - GetBooking @booking >> GET /booking with invalid checkin date format @regression
+- Location: tests/bookings.spec.ts:340:7
+
+# Error details
+
+```
+Error: expect(received).toContain(expected) // indexOf
+
+Expected value: 500
+Received array: [200, 400]
+```
+
+# Test source
+
+```ts
+  244 |   test('GET /booking/:id with non-existent ID returns 404 @regression', async ({ bookingClient }) => {
+  245 |     const response = await bookingClient.getById(999999);
+  246 | 
+  247 |     expect([404, 500]).toContain(response.status);
+  248 |   });
+  249 | 
+  250 |   test('GET /booking/:id with ID 0 @edge-case', async ({ bookingClient }) => {
+  251 |     const response = await bookingClient.getById(0);
+  252 | 
+  253 |     expect([400, 404, 500]).toContain(response.status);
+  254 |   });
+  255 | 
+  256 |   test('GET /booking/:id with negative ID @edge-case', async ({ bookingClient }) => {
+  257 |     const response = await bookingClient.getById(-1);
+  258 | 
+  259 |     expect([400, 404, 500]).toContain(response.status);
+  260 |   });
+  261 | 
+  262 |   test('GET /booking/:id with extremely large ID @edge-case', async ({ bookingClient }) => {
+  263 |     const response = await bookingClient.getById(999999999999);
+  264 | 
+  265 |     expect([400, 404, 500]).toContain(response.status);
+  266 |   });
+  267 | 
+  268 |   test('GET /booking/:id with non-numeric ID returns error @regression', async ({ bookingClient }) => {
+  269 |     const response = await bookingClient.getById('abc');
+  270 | 
+  271 |     expect([400, 404, 500]).toContain(response.status);
+  272 |   });
+  273 | 
+  274 |   test('GET /booking/:id with special characters in ID @security', async ({ bookingClient }) => {
+  275 |     const response = await bookingClient.getById("1'; DROP TABLE bookings; --");
+  276 | 
+  277 |     // API may return 404 or 500 for invalid ID
+  278 |     expect(response.status).toBeGreaterThanOrEqual(400);
+  279 |   });
+  280 | 
+  281 |   test('GET /booking/:id with path traversal attempt @security', async ({ bookingClient }) => {
+  282 |     const response = await bookingClient.getById('../../../etc/passwd');
+  283 | 
+  284 |     expect([400, 404, 500]).toContain(response.status);
+  285 |   });
+  286 | 
+  287 |   test('GET /booking/:id with whitespace ID @edge-case', async ({ bookingClient }) => {
+  288 |     const response = await bookingClient.getById('   ');
+  289 | 
+  290 |     // Whitespace IDs should not be found or cause error
+  291 |     expect([200, 400, 404, 500]).toContain(response.status);
+  292 |   });
+  293 | 
+  294 |   test('GET /booking/:id with empty string @edge-case', async ({ bookingClient }) => {
+  295 |     const response = await bookingClient.getById('');
+  296 | 
+  297 |     // Empty string should not be a valid ID
+  298 |     expect([200, 400, 404, 500]).toContain(response.status);
+  299 |   });
+  300 | 
+  301 |   test('GET /booking/:id with decimal ID @edge-case', async ({ bookingClient }) => {
+  302 |     const response = await bookingClient.getById('1.5');
+  303 | 
+  304 |     // Decimal IDs may be treated as invalid or converted
+  305 |     expect([200, 400, 404, 500]).toContain(response.status);
+  306 |   });
+  307 | 
+  308 |   test('GET /booking/:id with hexadecimal ID @edge-case', async ({ bookingClient }) => {
+  309 |     const response = await bookingClient.getById('0x1A');
+  310 | 
+  311 |     // Hex string IDs should not be found or should error
+  312 |     expect([200, 400, 404, 500]).toContain(response.status);
+  313 |   });
+  314 | 
+  315 |   // ========================
+  316 |   // NEGATIVE SCENARIOS: GET /booking (filters)
+  317 |   // ========================
+  318 | 
+  319 |   test('GET /booking with non-existent firstname returns empty list @regression', async ({ bookingClient }) => {
+  320 |     const response = await bookingClient.list({
+  321 |       firstname: 'NonExistentFirstname12345',
+  322 |     });
+  323 | 
+  324 |     assertStatus(response, 200);
+  325 |     const bookings = response.body as any[];
+  326 |     // Non-existent criteria should return empty or error
+  327 |     expect([0, bookings.length]).toContain(bookings.length);
+  328 |   });
+  329 | 
+  330 |   test('GET /booking with non-existent lastname returns empty list @regression', async ({ bookingClient }) => {
+  331 |     const response = await bookingClient.list({
+  332 |       lastname: 'NonExistentLastname12345',
+  333 |     });
+  334 | 
+  335 |     assertStatus(response, 200);
+  336 |     const bookings = response.body as any[];
+  337 |     expect([0, bookings.length]).toContain(bookings.length);
+  338 |   });
+  339 | 
+  340 |   test('GET /booking with invalid checkin date format @regression', async ({ bookingClient }) => {
+  341 |     const response = await bookingClient.list({ checkin: 'invalid-date' });
+  342 | 
+  343 |     // API may return 200 with filtered results or 400 for invalid format
+> 344 |     expect([200, 400]).toContain(response.status);
+      |                        ^ Error: expect(received).toContain(expected) // indexOf
+  345 |     if (response.status === 200) {
+  346 |       expect(Array.isArray(response.body)).toBe(true);
+  347 |     }
+  348 |   });
+  349 | 
+  350 |   test('GET /booking with invalid checkout date format @regression', async ({ bookingClient }) => {
+  351 |     const response = await bookingClient.list({ checkout: 'invalid-date' });
+  352 | 
+  353 |     // API may return 200 with filtered results or 400 for invalid format
+  354 |     expect([200, 400]).toContain(response.status);
+  355 |     if (response.status === 200) {
+  356 |       expect(Array.isArray(response.body)).toBe(true);
+  357 |     }
+  358 |   });
+  359 | 
+  360 |   test('GET /booking with SQL injection in firstname filter @security', async ({ bookingClient }) => {
+  361 |     const response = await bookingClient.list({
+  362 |       firstname: "'; DROP TABLE bookings; --",
+  363 |     });
+  364 | 
+  365 |     assertStatus(response, 200);
+  366 |     // API should safely handle injection attempt
+  367 |     const bookings = response.body as any[];
+  368 |     expect(Array.isArray(bookings)).toBe(true);
+  369 |   });
+  370 | 
+  371 |   test('GET /booking with SQL injection in lastname filter @security', async ({ bookingClient }) => {
+  372 |     const response = await bookingClient.list({
+  373 |       lastname: "' OR '1'='1",
+  374 |     });
+  375 | 
+  376 |     assertStatus(response, 200);
+  377 |     const bookings = response.body as any[];
+  378 |     expect(Array.isArray(bookings)).toBe(true);
+  379 |   });
+  380 | 
+  381 |   test('GET /booking with very long firstname filter @edge-case', async ({ bookingClient }) => {
+  382 |     const response = await bookingClient.list({
+  383 |       firstname: 'a'.repeat(1000),
+  384 |     });
+  385 | 
+  386 |     expect([200, 400, 414]).toContain(response.status);
+  387 |   });
+  388 | 
+  389 |   test('GET /booking with very long lastname filter @edge-case', async ({ bookingClient }) => {
+  390 |     const response = await bookingClient.list({
+  391 |       lastname: 'b'.repeat(1000),
+  392 |     });
+  393 | 
+  394 |     expect([200, 400, 414]).toContain(response.status);
+  395 |   });
+  396 | 
+  397 |   test('GET /booking with unicode characters in firstname filter @edge-case', async ({ bookingClient }) => {
+  398 |     const response = await bookingClient.list({
+  399 |       firstname: '用户名',
+  400 |     });
+  401 | 
+  402 |     assertStatus(response, 200);
+  403 |     expect(Array.isArray(response.body)).toBe(true);
+  404 |   });
+  405 | 
+  406 |   test('GET /booking with special characters in lastname filter @edge-case', async ({ bookingClient }) => {
+  407 |     const response = await bookingClient.list({
+  408 |       lastname: '@#$%^&*()',
+  409 |     });
+  410 | 
+  411 |     assertStatus(response, 200);
+  412 |     expect(Array.isArray(response.body)).toBe(true);
+  413 |   });
+  414 | 
+  415 |   test('GET /booking filter is case-sensitive @regression', async ({ bookingClient }) => {
+  416 |     const response1 = await bookingClient.list({ firstname: 'john' });
+  417 |     const response2 = await bookingClient.list({ firstname: 'JOHN' });
+  418 | 
+  419 |     assertStatus(response1, 200);
+  420 |     assertStatus(response2, 200);
+  421 | 
+  422 |     const bookings1 = response1.body as any[];
+  423 |     const bookings2 = response2.body as any[];
+  424 | 
+  425 |     // Results might differ if filter is case-sensitive
+  426 |     expect(Array.isArray(bookings1)).toBe(true);
+  427 |     expect(Array.isArray(bookings2)).toBe(true);
+  428 |   });
+  429 | 
+  430 |   test('GET /booking list response time is acceptable @performance', async ({ bookingClient }) => {
+  431 |     const response = await bookingClient.list();
+  432 | 
+  433 |     expect(response.durationMs).toBeLessThan(5000);
+  434 |   });
+  435 | 
+  436 |   test('GET /booking with all filters combined @regression', async ({ bookingClient }) => {
+  437 |     const response = await bookingClient.list({
+  438 |       firstname: 'John',
+  439 |       lastname: 'Doe',
+  440 |       checkin: '2013-02-23',
+  441 |       checkout: '2014-10-23',
+  442 |     });
+  443 | 
+  444 |     assertStatus(response, 200);
+```
