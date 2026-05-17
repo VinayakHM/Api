@@ -1,0 +1,2 @@
+[2026-05-17T08:18:05.211Z]INFO -> PUT /users/1{"headers":["Authorization"]}
+[2026-05-17T08:18:05.470Z]INFO <- PUT /users/1 200 (259ms)

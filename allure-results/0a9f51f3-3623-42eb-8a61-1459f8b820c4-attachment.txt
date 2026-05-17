@@ -1,0 +1,2 @@
+[2026-05-17T08:18:05.180Z]INFO -> GET /users/99999{"headers":["Authorization"]}
+[2026-05-17T08:18:05.200Z]INFO <- GET /users/99999 404 (20ms)

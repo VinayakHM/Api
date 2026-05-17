@@ -1,0 +1,2 @@
+[2026-05-17T08:18:05.480Z]INFO -> DELETE /users/1{"headers":["Authorization"]}
+[2026-05-17T08:18:06.215Z]INFO <- DELETE /users/1 200 (735ms)

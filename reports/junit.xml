@@ -1,0 +1,93 @@
+<testsuites id="" name="" tests="13" failures="0" skipped="0" errors="0" time="1.711299">
+<testsuite name="data-integrity.spec.ts" timestamp="2026-05-17T08:18:04.662Z" hostname="api" tests="2" failures="0" skipped="0" time="0.951" errors="0">
+<testcase name="Cross-resource data integrity @regression › Every post returned for a user references that same userId" classname="data-integrity.spec.ts" time="0.851">
+<system-out>
+<![CDATA[[2026-05-17T08:18:04.977Z]INFO -> GET /users/1{"headers":["Authorization"]}
+[2026-05-17T08:18:05.056Z]INFO <- GET /users/1 200 (78ms)
+[2026-05-17T08:18:05.059Z]INFO -> GET /users/1/posts{"headers":["Authorization"]}
+[2026-05-17T08:18:05.803Z]INFO <- GET /users/1/posts 200 (743ms)
+]]>
+</system-out>
+</testcase>
+<testcase name="Cross-resource data integrity @regression › List of users contains no duplicate ids or emails" classname="data-integrity.spec.ts" time="0.1">
+<system-out>
+<![CDATA[[2026-05-17T08:18:04.977Z]INFO -> GET /users{"headers":["Authorization"]}
+[2026-05-17T08:18:05.052Z]INFO <- GET /users 200 (75ms)
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="example.spec.ts" timestamp="2026-05-17T08:18:04.662Z" hostname="api" tests="2" failures="0" skipped="0" time="1.971" errors="0">
+<testcase name="has title" classname="example.spec.ts" time="0.927">
+</testcase>
+<testcase name="get started link" classname="example.spec.ts" time="1.044">
+</testcase>
+</testsuite>
+<testsuite name="posts.spec.ts" timestamp="2026-05-17T08:18:04.662Z" hostname="api" tests="3" failures="0" skipped="0" time="1.691" errors="0">
+<testcase name="Posts API @smoke › GET /posts returns a valid list" classname="posts.spec.ts" time="0.799">
+<system-out>
+<![CDATA[[2026-05-17T08:18:05.069Z]INFO -> GET /posts?_limit=10{"headers":["Authorization"]}
+[2026-05-17T08:18:05.846Z]INFO <- GET /posts?_limit=10 200 (776ms)
+]]>
+</system-out>
+</testcase>
+<testcase name="Posts API @smoke › GET /posts filtered by userId returns only that user&apos;s posts" classname="posts.spec.ts" time="0.095">
+<system-out>
+<![CDATA[[2026-05-17T08:18:05.062Z]INFO -> GET /posts?userId=1{"headers":["Authorization"]}
+[2026-05-17T08:18:05.132Z]INFO <- GET /posts?userId=1 200 (69ms)
+]]>
+</system-out>
+</testcase>
+<testcase name="Posts API @smoke › POST /posts creates a post" classname="posts.spec.ts" time="0.797">
+<system-out>
+<![CDATA[[2026-05-17T08:18:05.067Z]INFO -> POST /posts{"headers":["Authorization"]}
+[2026-05-17T08:18:05.839Z]INFO <- POST /posts 201 (772ms)
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="users.spec.ts" timestamp="2026-05-17T08:18:04.662Z" hostname="api" tests="6" failures="0" skipped="0" time="1.797" errors="0">
+<testcase name="Users API @smoke › GET /users returns a valid list" classname="users.spec.ts" time="0.027">
+<system-out>
+<![CDATA[[2026-05-17T08:18:05.168Z]INFO -> GET /users{"headers":["Authorization"]}
+[2026-05-17T08:18:05.187Z]INFO <- GET /users 200 (19ms)
+]]>
+</system-out>
+</testcase>
+<testcase name="Users API @smoke › GET /users/:id returns a single valid user" classname="users.spec.ts" time="0.024">
+<system-out>
+<![CDATA[[2026-05-17T08:18:05.150Z]INFO -> GET /users/1{"headers":["Authorization"]}
+[2026-05-17T08:18:05.171Z]INFO <- GET /users/1 200 (19ms)
+]]>
+</system-out>
+</testcase>
+<testcase name="Users API @smoke › GET /users/:id with non-existent id returns 404" classname="users.spec.ts" time="0.024">
+<system-out>
+<![CDATA[[2026-05-17T08:18:05.180Z]INFO -> GET /users/99999{"headers":["Authorization"]}
+[2026-05-17T08:18:05.200Z]INFO <- GET /users/99999 404 (20ms)
+]]>
+</system-out>
+</testcase>
+<testcase name="Users API @smoke › POST /users creates a user and echoes payload @regression" classname="users.spec.ts" time="0.721">
+<system-out>
+<![CDATA[[2026-05-17T08:18:05.203Z]INFO -> POST /users{"headers":["Authorization"]}
+[2026-05-17T08:18:05.919Z]INFO <- POST /users 201 (715ms)
+]]>
+</system-out>
+</testcase>
+<testcase name="Users API @smoke › PUT /users/:id updates and returns the updated resource @regression" classname="users.spec.ts" time="0.265">
+<system-out>
+<![CDATA[[2026-05-17T08:18:05.211Z]INFO -> PUT /users/1{"headers":["Authorization"]}
+[2026-05-17T08:18:05.470Z]INFO <- PUT /users/1 200 (259ms)
+]]>
+</system-out>
+</testcase>
+<testcase name="Users API @smoke › DELETE /users/:id returns success @regression" classname="users.spec.ts" time="0.736">
+<system-out>
+<![CDATA[[2026-05-17T08:18:05.480Z]INFO -> DELETE /users/1{"headers":["Authorization"]}
+[2026-05-17T08:18:06.215Z]INFO <- DELETE /users/1 200 (735ms)
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

@@ -1,0 +1,2 @@
+[2026-05-17T08:18:05.067Z]INFO -> POST /posts{"headers":["Authorization"]}
+[2026-05-17T08:18:05.839Z]INFO <- POST /posts 201 (772ms)
