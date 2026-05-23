@@ -16,7 +16,7 @@ A scalable, modular API test framework built on *Playwright Test* + *Zod*, with 
 
 ## Project layout
 
-
+```
 .
 ├── src/
 │   ├── clients/         # HTTP clients (one per resource). Extend BaseClient.
@@ -32,6 +32,7 @@ A scalable, modular API test framework built on *Playwright Test* + *Zod*, with 
 ├── playwright.config.ts
 ├── tsconfig.json
 └── package.json
+```
 
 
 ## Setup

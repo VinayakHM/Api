@@ -1,1314 +1,1314 @@
-<testsuites id="" name="" tests="156" failures="1" skipped="0" errors="0" time="11.282042">
-<testsuite name="auth.spec.ts" timestamp="2026-05-17T11:12:48.222Z" hostname="api" tests="22" failures="0" skipped="0" time="16.747" errors="0">
-<testcase name="Auth API - CreateToken @auth › POST /auth with valid credentials returns token @smoke" classname="auth.spec.ts" time="1.705">
+<testsuites id="" name="" tests="156" failures="1" skipped="0" errors="0" time="26.821298">
+<testsuite name="auth.spec.ts" timestamp="2026-05-17T17:40:00.765Z" hostname="api" tests="22" failures="0" skipped="0" time="12.512" errors="0">
+<testcase name="Auth API - CreateToken @auth › POST /auth with valid credentials returns token @smoke" classname="auth.spec.ts" time="1.254">
 <system-out>
-<![CDATA[[2026-05-17T11:12:48.538Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:50.214Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (1674ms)
+<![CDATA[[2026-05-17T17:40:01.083Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:02.306Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (1222ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Auth API - CreateToken @auth › POST /auth token format is alphanumeric @smoke" classname="auth.spec.ts" time="1.707">
+<testcase name="Auth API - CreateToken @auth › POST /auth token format is alphanumeric @smoke" classname="auth.spec.ts" time="1.256">
 <system-out>
-<![CDATA[[2026-05-17T11:12:48.538Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:50.212Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (1672ms)
+<![CDATA[[2026-05-17T17:40:01.083Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:02.308Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (1224ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Auth API - CreateToken @auth › POST /auth response contains only token field" classname="auth.spec.ts" time="1.7">
+<testcase name="Auth API - CreateToken @auth › POST /auth response contains only token field" classname="auth.spec.ts" time="1.253">
 <system-out>
-<![CDATA[[2026-05-17T11:12:48.538Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:50.212Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (1671ms)
+<![CDATA[[2026-05-17T17:40:01.083Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:02.309Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (1225ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Auth API - CreateToken @auth › POST /auth with missing username returns error @regression" classname="auth.spec.ts" time="1.712">
+<testcase name="Auth API - CreateToken @auth › POST /auth with missing username returns error @regression" classname="auth.spec.ts" time="1.251">
 <system-out>
-<![CDATA[[2026-05-17T11:12:48.538Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:50.218Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (1678ms)
+<![CDATA[[2026-05-17T17:40:01.083Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:02.306Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (1222ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Auth API - CreateToken @auth › POST /auth with missing password returns error @regression" classname="auth.spec.ts" time="1.71">
+<testcase name="Auth API - CreateToken @auth › POST /auth with missing password returns error @regression" classname="auth.spec.ts" time="1.247">
 <system-out>
-<![CDATA[[2026-05-17T11:12:48.538Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:50.217Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (1678ms)
+<![CDATA[[2026-05-17T17:40:01.085Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:02.306Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (1220ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Auth API - CreateToken @auth › POST /auth with invalid username returns error @regression" classname="auth.spec.ts" time="1.711">
+<testcase name="Auth API - CreateToken @auth › POST /auth with invalid username returns error @regression" classname="auth.spec.ts" time="1.256">
 <system-out>
-<![CDATA[[2026-05-17T11:12:48.538Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:50.220Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (1681ms)
+<![CDATA[[2026-05-17T17:40:01.083Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:02.308Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (1224ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Auth API - CreateToken @auth › POST /auth with invalid password returns error @regression" classname="auth.spec.ts" time="1.698">
+<testcase name="Auth API - CreateToken @auth › POST /auth with invalid password returns error @regression" classname="auth.spec.ts" time="1.252">
 <system-out>
-<![CDATA[[2026-05-17T11:12:48.538Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:50.212Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (1672ms)
+<![CDATA[[2026-05-17T17:40:01.083Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:02.306Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (1222ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Auth API - CreateToken @auth › POST /auth with both empty credentials returns error @regression" classname="auth.spec.ts" time="0.35">
+<testcase name="Auth API - CreateToken @auth › POST /auth with both empty credentials returns error @regression" classname="auth.spec.ts" time="0.231">
 <system-out>
-<![CDATA[[2026-05-17T11:12:50.239Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:50.582Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (338ms)
+<![CDATA[[2026-05-17T17:40:02.327Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:02.550Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (222ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Auth API - CreateToken @auth › POST /auth with whitespace-only username returns error @regression" classname="auth.spec.ts" time="0.352">
+<testcase name="Auth API - CreateToken @auth › POST /auth with whitespace-only username returns error @regression" classname="auth.spec.ts" time="0.228">
 <system-out>
-<![CDATA[[2026-05-17T11:12:50.241Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:50.582Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (335ms)
+<![CDATA[[2026-05-17T17:40:02.329Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:02.551Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (221ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Auth API - CreateToken @auth › POST /auth with whitespace-only password returns error @regression" classname="auth.spec.ts" time="0.351">
+<testcase name="Auth API - CreateToken @auth › POST /auth with whitespace-only password returns error @regression" classname="auth.spec.ts" time="0.226">
 <system-out>
-<![CDATA[[2026-05-17T11:12:50.243Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:50.582Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (333ms)
+<![CDATA[[2026-05-17T17:40:02.330Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:02.551Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (220ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Auth API - CreateToken @auth › POST /auth with special characters in username @regression" classname="auth.spec.ts" time="0.35">
+<testcase name="Auth API - CreateToken @auth › POST /auth with special characters in username @regression" classname="auth.spec.ts" time="0.237">
 <system-out>
-<![CDATA[[2026-05-17T11:12:50.244Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:50.584Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (336ms)
+<![CDATA[[2026-05-17T17:40:02.331Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:02.558Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (226ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Auth API - CreateToken @auth › POST /auth with SQL injection attempt in username returns error @security" classname="auth.spec.ts" time="0.35">
+<testcase name="Auth API - CreateToken @auth › POST /auth with SQL injection attempt in username returns error @security" classname="auth.spec.ts" time="0.234">
 <system-out>
-<![CDATA[[2026-05-17T11:12:50.245Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:50.582Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (331ms)
+<![CDATA[[2026-05-17T17:40:02.332Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:02.558Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (224ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Auth API - CreateToken @auth › POST /auth with very long username @edge-case" classname="auth.spec.ts" time="0.346">
+<testcase name="Auth API - CreateToken @auth › POST /auth with very long username @edge-case" classname="auth.spec.ts" time="0.234">
 <system-out>
-<![CDATA[[2026-05-17T11:12:50.246Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:50.584Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (333ms)
+<![CDATA[[2026-05-17T17:40:02.331Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:02.558Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (225ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Auth API - CreateToken @auth › POST /auth with very long password @edge-case" classname="auth.spec.ts" time="0.345">
+<testcase name="Auth API - CreateToken @auth › POST /auth with very long password @edge-case" classname="auth.spec.ts" time="0.235">
 <system-out>
-<![CDATA[[2026-05-17T11:12:50.248Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:50.584Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (332ms)
+<![CDATA[[2026-05-17T17:40:02.334Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:02.558Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (222ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Auth API - CreateToken @auth › POST /auth with unicode characters in username @edge-case" classname="auth.spec.ts" time="0.278">
+<testcase name="Auth API - CreateToken @auth › POST /auth with unicode characters in username @edge-case" classname="auth.spec.ts" time="0.242">
 <system-out>
-<![CDATA[[2026-05-17T11:12:50.606Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:50.880Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (274ms)
+<![CDATA[[2026-05-17T17:40:02.570Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:02.808Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (237ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Auth API - CreateToken @auth › POST /auth with numeric string credentials @edge-case" classname="auth.spec.ts" time="0.276">
+<testcase name="Auth API - CreateToken @auth › POST /auth with numeric string credentials @edge-case" classname="auth.spec.ts" time="0.243">
 <system-out>
-<![CDATA[[2026-05-17T11:12:50.606Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:50.877Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (270ms)
+<![CDATA[[2026-05-17T17:40:02.570Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:02.809Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (238ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Auth API - CreateToken @auth › POST /auth case sensitivity - lowercase username @regression" classname="auth.spec.ts" time="0.275">
+<testcase name="Auth API - CreateToken @auth › POST /auth case sensitivity - lowercase username @regression" classname="auth.spec.ts" time="0.243">
 <system-out>
-<![CDATA[[2026-05-17T11:12:50.610Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:50.880Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (270ms)
+<![CDATA[[2026-05-17T17:40:02.570Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:02.809Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (238ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Auth API - CreateToken @auth › POST /auth case sensitivity - different password case @regression" classname="auth.spec.ts" time="0.274">
+<testcase name="Auth API - CreateToken @auth › POST /auth case sensitivity - different password case @regression" classname="auth.spec.ts" time="0.238">
 <system-out>
-<![CDATA[[2026-05-17T11:12:50.610Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:50.880Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (270ms)
+<![CDATA[[2026-05-17T17:40:02.575Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:02.809Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (233ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Auth API - CreateToken @auth › POST /auth returns consistent token on multiple calls @regression" classname="auth.spec.ts" time="0.491">
+<testcase name="Auth API - CreateToken @auth › POST /auth returns consistent token on multiple calls @regression" classname="auth.spec.ts" time="0.458">
 <system-out>
-<![CDATA[[2026-05-17T11:12:50.612Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:50.880Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (268ms)
-[2026-05-17T11:12:50.880Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:51.100Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (220ms)
+<![CDATA[[2026-05-17T17:40:02.575Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:02.809Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (233ms)
+[2026-05-17T17:40:02.809Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:03.030Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (220ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Auth API - CreateToken @auth › POST /auth has proper Content-Type header in response @smoke" classname="auth.spec.ts" time="0.27">
+<testcase name="Auth API - CreateToken @auth › POST /auth has proper Content-Type header in response @smoke" classname="auth.spec.ts" time="0.237">
 <system-out>
-<![CDATA[[2026-05-17T11:12:50.615Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:50.880Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (265ms)
+<![CDATA[[2026-05-17T17:40:02.576Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:02.809Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (233ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Auth API - CreateToken @auth › POST /auth with extra fields in payload @regression" classname="auth.spec.ts" time="0.274">
+<testcase name="Auth API - CreateToken @auth › POST /auth with extra fields in payload @regression" classname="auth.spec.ts" time="0.236">
 <system-out>
-<![CDATA[[2026-05-17T11:12:50.615Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:50.881Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (266ms)
+<![CDATA[[2026-05-17T17:40:02.577Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:02.809Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (231ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Auth API - CreateToken @auth › POST /auth responds within acceptable time @performance" classname="auth.spec.ts" time="0.222">
+<testcase name="Auth API - CreateToken @auth › POST /auth responds within acceptable time @performance" classname="auth.spec.ts" time="0.221">
 <system-out>
-<![CDATA[[2026-05-17T11:12:50.896Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:51.114Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (217ms)
+<![CDATA[[2026-05-17T17:40:02.823Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:03.041Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (217ms)
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="booking-create-update.spec.ts" timestamp="2026-05-17T11:12:48.222Z" hostname="api" tests="52" failures="0" skipped="0" time="18.934" errors="0">
-<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking creates booking with all required fields @smoke" classname="booking-create-update.spec.ts" time="0.228">
+<testsuite name="booking-create-update.spec.ts" timestamp="2026-05-17T17:40:00.765Z" hostname="api" tests="52" failures="0" skipped="0" time="18.922" errors="0">
+<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking creates booking with all required fields @smoke" classname="booking-create-update.spec.ts" time="0.227">
 <system-out>
-<![CDATA[[2026-05-17T11:12:51.009Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:51.232Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (222ms)
+<![CDATA[[2026-05-17T17:40:02.934Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:03.153Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (219ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking returns valid booking ID @smoke" classname="booking-create-update.spec.ts" time="0.229">
+<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking returns valid booking ID @smoke" classname="booking-create-update.spec.ts" time="0.227">
 <system-out>
-<![CDATA[[2026-05-17T11:12:51.009Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:51.232Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (222ms)
+<![CDATA[[2026-05-17T17:40:02.933Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:03.153Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (220ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking response echoes request data @smoke" classname="booking-create-update.spec.ts" time="0.229">
+<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking response echoes request data @smoke" classname="booking-create-update.spec.ts" time="0.227">
 <system-out>
-<![CDATA[[2026-05-17T11:12:51.014Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:51.237Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (223ms)
+<![CDATA[[2026-05-17T17:40:02.935Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:03.155Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (220ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking with depositpaid true @smoke" classname="booking-create-update.spec.ts" time="0.227">
+<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking with depositpaid true @smoke" classname="booking-create-update.spec.ts" time="0.226">
 <system-out>
-<![CDATA[[2026-05-17T11:12:51.009Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:51.230Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (221ms)
+<![CDATA[[2026-05-17T17:40:02.934Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:03.153Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (219ms)
 ]]>
 </system-out>
 </testcase>
 <testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking with depositpaid false @smoke" classname="booking-create-update.spec.ts" time="0.226">
 <system-out>
-<![CDATA[[2026-05-17T11:12:51.010Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:51.232Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (221ms)
+<![CDATA[[2026-05-17T17:40:02.936Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:03.155Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (219ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking with zero price @regression" classname="booking-create-update.spec.ts" time="0.224">
+<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking with zero price @regression" classname="booking-create-update.spec.ts" time="0.228">
 <system-out>
-<![CDATA[[2026-05-17T11:12:51.200Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:51.420Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (219ms)
+<![CDATA[[2026-05-17T17:40:03.130Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:03.353Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (222ms)
 ]]>
 </system-out>
 </testcase>
 <testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking with high price @regression" classname="booking-create-update.spec.ts" time="0.223">
 <system-out>
-<![CDATA[[2026-05-17T11:12:51.211Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:51.428Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (217ms)
+<![CDATA[[2026-05-17T17:40:03.139Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:03.357Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (218ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking without additionalneeds field @regression" classname="booking-create-update.spec.ts" time="0.222">
+<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking without additionalneeds field @regression" classname="booking-create-update.spec.ts" time="0.223">
 <system-out>
-<![CDATA[[2026-05-17T11:12:51.242Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:51.462Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (220ms)
+<![CDATA[[2026-05-17T17:40:03.165Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:03.385Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (220ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking with special characters in names @regression" classname="booking-create-update.spec.ts" time="0.221">
+<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking with special characters in names @regression" classname="booking-create-update.spec.ts" time="0.223">
 <system-out>
-<![CDATA[[2026-05-17T11:12:51.244Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:51.463Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (219ms)
+<![CDATA[[2026-05-17T17:40:03.168Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:03.387Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (219ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking creates multiple bookings independently @regression" classname="booking-create-update.spec.ts" time="0.45">
+<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking creates multiple bookings independently @regression" classname="booking-create-update.spec.ts" time="0.439">
 <system-out>
-<![CDATA[[2026-05-17T11:12:51.247Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:51.466Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (218ms)
-[2026-05-17T11:12:51.466Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:51.692Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (226ms)
+<![CDATA[[2026-05-17T17:40:03.170Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:03.387Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (217ms)
+[2026-05-17T17:40:03.387Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:03.604Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (217ms)
 ]]>
 </system-out>
 </testcase>
 <testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking with past checkout date @regression" classname="booking-create-update.spec.ts" time="0.222">
 <system-out>
-<![CDATA[[2026-05-17T11:12:51.249Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:51.469Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (220ms)
+<![CDATA[[2026-05-17T17:40:03.172Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:03.392Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (220ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking response time is acceptable @performance" classname="booking-create-update.spec.ts" time="0.219">
+<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking response time is acceptable @performance" classname="booking-create-update.spec.ts" time="0.223">
 <system-out>
-<![CDATA[[2026-05-17T11:12:51.252Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:51.469Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (217ms)
+<![CDATA[[2026-05-17T17:40:03.174Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:03.393Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (219ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking has proper Content-Type response header @smoke" classname="booking-create-update.spec.ts" time="0.228">
+<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking has proper Content-Type response header @smoke" classname="booking-create-update.spec.ts" time="0.225">
 <system-out>
-<![CDATA[[2026-05-17T11:12:51.442Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:51.666Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (223ms)
+<![CDATA[[2026-05-17T17:40:03.368Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:03.589Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (220ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking response contains correct response structure @smoke" classname="booking-create-update.spec.ts" time="0.225">
+<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking response contains correct response structure @smoke" classname="booking-create-update.spec.ts" time="0.223">
 <system-out>
-<![CDATA[[2026-05-17T11:12:51.445Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:51.665Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (220ms)
+<![CDATA[[2026-05-17T17:40:03.373Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:03.590Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (217ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking with missing firstname returns error @regression" classname="booking-create-update.spec.ts" time="0.227">
+<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking with missing firstname returns error @regression" classname="booking-create-update.spec.ts" time="0.219">
 <system-out>
-<![CDATA[[2026-05-17T11:12:51.471Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:51.696Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (225ms)
+<![CDATA[[2026-05-17T17:40:03.396Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:03.613Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (217ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking with missing lastname returns error @regression" classname="booking-create-update.spec.ts" time="0.227">
+<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking with missing lastname returns error @regression" classname="booking-create-update.spec.ts" time="0.221">
 <system-out>
-<![CDATA[[2026-05-17T11:12:51.474Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:51.699Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (225ms)
+<![CDATA[[2026-05-17T17:40:03.400Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:03.618Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (217ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking with missing totalprice returns error @regression" classname="booking-create-update.spec.ts" time="0.223">
+<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking with missing totalprice returns error @regression" classname="booking-create-update.spec.ts" time="0.225">
 <system-out>
-<![CDATA[[2026-05-17T11:12:51.478Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:51.699Z]INFO <- POST https://restful-booker.herokuapp.com/booking 500 (221ms)
+<![CDATA[[2026-05-17T17:40:03.406Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:03.628Z]INFO <- POST https://restful-booker.herokuapp.com/booking 500 (222ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking with missing depositpaid returns error @regression" classname="booking-create-update.spec.ts" time="0.222">
+<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking with missing depositpaid returns error @regression" classname="booking-create-update.spec.ts" time="0.226">
 <system-out>
-<![CDATA[[2026-05-17T11:12:51.480Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:51.700Z]INFO <- POST https://restful-booker.herokuapp.com/booking 500 (220ms)
+<![CDATA[[2026-05-17T17:40:03.408Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:03.633Z]INFO <- POST https://restful-booker.herokuapp.com/booking 500 (224ms)
 ]]>
 </system-out>
 </testcase>
 <testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking with missing bookingdates returns error @regression" classname="booking-create-update.spec.ts" time="0.226">
 <system-out>
-<![CDATA[[2026-05-17T11:12:51.680Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:51.902Z]INFO <- POST https://restful-booker.herokuapp.com/booking 500 (220ms)
+<![CDATA[[2026-05-17T17:40:03.605Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:03.827Z]INFO <- POST https://restful-booker.herokuapp.com/booking 500 (221ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking with invalid totalprice (negative) @regression" classname="booking-create-update.spec.ts" time="0.225">
+<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking with invalid totalprice (negative) @regression" classname="booking-create-update.spec.ts" time="0.228">
 <system-out>
-<![CDATA[[2026-05-17T11:12:51.685Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:51.905Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (219ms)
+<![CDATA[[2026-05-17T17:40:03.608Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:03.831Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (222ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking with invalid totalprice (string) @regression" classname="booking-create-update.spec.ts" time="0.222">
+<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking with invalid totalprice (string) @regression" classname="booking-create-update.spec.ts" time="0.223">
 <system-out>
-<![CDATA[[2026-05-17T11:12:51.705Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:51.925Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (219ms)
+<![CDATA[[2026-05-17T17:40:03.617Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:03.837Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (220ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking with invalid depositpaid (non-boolean) @regression" classname="booking-create-update.spec.ts" time="0.22">
+<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking with invalid depositpaid (non-boolean) @regression" classname="booking-create-update.spec.ts" time="0.226">
 <system-out>
-<![CDATA[[2026-05-17T11:12:51.709Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:51.926Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (217ms)
+<![CDATA[[2026-05-17T17:40:03.624Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:03.847Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (223ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking with invalid checkin date format @regression" classname="booking-create-update.spec.ts" time="0.223">
+<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking with invalid checkin date format @regression" classname="booking-create-update.spec.ts" time="0.225">
 <system-out>
-<![CDATA[[2026-05-17T11:12:51.711Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:51.931Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (220ms)
+<![CDATA[[2026-05-17T17:40:03.629Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:03.852Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (222ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking with invalid checkout date format @regression" classname="booking-create-update.spec.ts" time="0.219">
+<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking with invalid checkout date format @regression" classname="booking-create-update.spec.ts" time="0.227">
 <system-out>
-<![CDATA[[2026-05-17T11:12:51.718Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:51.935Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (217ms)
+<![CDATA[[2026-05-17T17:40:03.638Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:03.862Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (224ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking with checkout before checkin @regression" classname="booking-create-update.spec.ts" time="0.22">
+<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking with checkout before checkin @regression" classname="booking-create-update.spec.ts" time="0.227">
 <system-out>
-<![CDATA[[2026-05-17T11:12:51.721Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:51.939Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (218ms)
+<![CDATA[[2026-05-17T17:40:03.643Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:03.868Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (225ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking with very long firstname @edge-case" classname="booking-create-update.spec.ts" time="0.222">
+<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking with very long firstname @edge-case" classname="booking-create-update.spec.ts" time="0.226">
 <system-out>
-<![CDATA[[2026-05-17T11:12:51.916Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:52.135Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (219ms)
+<![CDATA[[2026-05-17T17:40:03.842Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:04.063Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (220ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking with very long lastname @edge-case" classname="booking-create-update.spec.ts" time="0.223">
+<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking with very long lastname @edge-case" classname="booking-create-update.spec.ts" time="0.222">
 <system-out>
-<![CDATA[[2026-05-17T11:12:51.920Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:52.139Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (219ms)
+<![CDATA[[2026-05-17T17:40:03.849Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:04.067Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (218ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking with unicode characters in firstname @edge-case" classname="booking-create-update.spec.ts" time="0.221">
+<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking with unicode characters in firstname @edge-case" classname="booking-create-update.spec.ts" time="0.223">
 <system-out>
-<![CDATA[[2026-05-17T11:12:51.935Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:52.154Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (218ms)
+<![CDATA[[2026-05-17T17:40:03.853Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:04.073Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (220ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking with SQL injection in firstname @security" classname="booking-create-update.spec.ts" time="0.22">
+<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking with SQL injection in firstname @security" classname="booking-create-update.spec.ts" time="0.221">
 <system-out>
-<![CDATA[[2026-05-17T11:12:51.938Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:52.155Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (217ms)
+<![CDATA[[2026-05-17T17:40:03.859Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:04.077Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (218ms)
 ]]>
 </system-out>
 </testcase>
 <testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking with very large totalprice @edge-case" classname="booking-create-update.spec.ts" time="0.223">
 <system-out>
-<![CDATA[[2026-05-17T11:12:51.946Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:52.167Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (221ms)
+<![CDATA[[2026-05-17T17:40:03.865Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:04.085Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (220ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking with float totalprice @regression" classname="booking-create-update.spec.ts" time="0.219">
+<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking with float totalprice @regression" classname="booking-create-update.spec.ts" time="0.226">
 <system-out>
-<![CDATA[[2026-05-17T11:12:51.949Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:52.166Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (217ms)
+<![CDATA[[2026-05-17T17:40:03.874Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:04.097Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (223ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking with null firstname @regression" classname="booking-create-update.spec.ts" time="0.22">
+<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking with null firstname @regression" classname="booking-create-update.spec.ts" time="0.221">
 <system-out>
-<![CDATA[[2026-05-17T11:12:51.954Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:52.172Z]INFO <- POST https://restful-booker.herokuapp.com/booking 500 (218ms)
+<![CDATA[[2026-05-17T17:40:03.879Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:04.098Z]INFO <- POST https://restful-booker.herokuapp.com/booking 500 (219ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking with empty additionalneeds @regression" classname="booking-create-update.spec.ts" time="0.231">
+<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking with empty additionalneeds @regression" classname="booking-create-update.spec.ts" time="0.23">
 <system-out>
-<![CDATA[[2026-05-17T11:12:52.148Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:52.375Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (227ms)
+<![CDATA[[2026-05-17T17:40:04.079Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:04.305Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (226ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking with very long additionalneeds @edge-case" classname="booking-create-update.spec.ts" time="0.237">
+<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › POST /booking with very long additionalneeds @edge-case" classname="booking-create-update.spec.ts" time="0.228">
 <system-out>
-<![CDATA[[2026-05-17T11:12:52.157Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:52.391Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (234ms)
+<![CDATA[[2026-05-17T17:40:04.085Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:04.308Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (222ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › PUT /booking/:id updates booking with valid token @smoke" classname="booking-create-update.spec.ts" time="0.678">
+<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › PUT /booking/:id updates booking with valid token @smoke" classname="booking-create-update.spec.ts" time="0.69">
 <system-out>
-<![CDATA[[2026-05-17T11:12:52.178Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:52.404Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (225ms)
-[2026-05-17T11:12:52.404Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:52.629Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (224ms)
-[2026-05-17T11:12:52.629Z]INFO -> PUT https://restful-booker.herokuapp.com/booking/1158{"headers":["Authorization","Cookie"]}
-[2026-05-17T11:12:52.850Z]INFO <- PUT https://restful-booker.herokuapp.com/booking/1158 200 (220ms)
+<![CDATA[[2026-05-17T17:40:04.087Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:04.312Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (225ms)
+[2026-05-17T17:40:04.312Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:04.536Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (223ms)
+[2026-05-17T17:40:04.537Z]INFO -> PUT https://restful-booker.herokuapp.com/booking/16284{"headers":["Authorization","Cookie"]}
+[2026-05-17T17:40:04.765Z]INFO <- PUT https://restful-booker.herokuapp.com/booking/16284 200 (227ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › PUT /booking/:id updates firstname @smoke" classname="booking-create-update.spec.ts" time="0.704">
+<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › PUT /booking/:id updates firstname @smoke" classname="booking-create-update.spec.ts" time="0.68">
 <system-out>
-<![CDATA[[2026-05-17T11:12:52.181Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:52.410Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (229ms)
-[2026-05-17T11:12:52.410Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:52.664Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (253ms)
-[2026-05-17T11:12:52.664Z]INFO -> PUT https://restful-booker.herokuapp.com/booking/1159{"headers":["Authorization","Cookie"]}
-[2026-05-17T11:12:52.882Z]INFO <- PUT https://restful-booker.herokuapp.com/booking/1159 200 (218ms)
+<![CDATA[[2026-05-17T17:40:04.098Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:04.321Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (223ms)
+[2026-05-17T17:40:04.321Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:04.544Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (221ms)
+[2026-05-17T17:40:04.544Z]INFO -> PUT https://restful-booker.herokuapp.com/booking/16285{"headers":["Authorization","Cookie"]}
+[2026-05-17T17:40:04.772Z]INFO <- PUT https://restful-booker.herokuapp.com/booking/16285 200 (226ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › PUT /booking/:id updates totalprice @smoke" classname="booking-create-update.spec.ts" time="0.699">
+<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › PUT /booking/:id updates totalprice @smoke" classname="booking-create-update.spec.ts" time="0.676">
 <system-out>
-<![CDATA[[2026-05-17T11:12:52.183Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:52.410Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (227ms)
-[2026-05-17T11:12:52.410Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:52.660Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (250ms)
-[2026-05-17T11:12:52.661Z]INFO -> PUT https://restful-booker.herokuapp.com/booking/1160{"headers":["Authorization","Cookie"]}
-[2026-05-17T11:12:52.879Z]INFO <- PUT https://restful-booker.herokuapp.com/booking/1160 200 (217ms)
+<![CDATA[[2026-05-17T17:40:04.103Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:04.326Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (222ms)
+[2026-05-17T17:40:04.326Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:04.546Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (220ms)
+[2026-05-17T17:40:04.547Z]INFO -> PUT https://restful-booker.herokuapp.com/booking/16286{"headers":["Authorization","Cookie"]}
+[2026-05-17T17:40:04.773Z]INFO <- PUT https://restful-booker.herokuapp.com/booking/16286 200 (225ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › PUT /booking/:id updates depositpaid @smoke" classname="booking-create-update.spec.ts" time="0.702">
+<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › PUT /booking/:id updates depositpaid @smoke" classname="booking-create-update.spec.ts" time="0.679">
 <system-out>
-<![CDATA[[2026-05-17T11:12:52.186Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:52.425Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (239ms)
-[2026-05-17T11:12:52.425Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:52.664Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (239ms)
-[2026-05-17T11:12:52.664Z]INFO -> PUT https://restful-booker.herokuapp.com/booking/1161{"headers":["Authorization","Cookie"]}
-[2026-05-17T11:12:52.884Z]INFO <- PUT https://restful-booker.herokuapp.com/booking/1161 200 (220ms)
+<![CDATA[[2026-05-17T17:40:04.135Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:04.357Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (222ms)
+[2026-05-17T17:40:04.357Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:04.583Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (226ms)
+[2026-05-17T17:40:04.584Z]INFO -> PUT https://restful-booker.herokuapp.com/booking/16287{"headers":["Authorization","Cookie"]}
+[2026-05-17T17:40:04.812Z]INFO <- PUT https://restful-booker.herokuapp.com/booking/16287 200 (228ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › PUT /booking/:id response contains updated booking @smoke" classname="booking-create-update.spec.ts" time="0.691">
+<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › PUT /booking/:id response contains updated booking @smoke" classname="booking-create-update.spec.ts" time="0.672">
 <system-out>
-<![CDATA[[2026-05-17T11:12:52.194Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:52.425Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (231ms)
-[2026-05-17T11:12:52.425Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:52.664Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (239ms)
-[2026-05-17T11:12:52.664Z]INFO -> PUT https://restful-booker.herokuapp.com/booking/1162{"headers":["Authorization","Cookie"]}
-[2026-05-17T11:12:52.883Z]INFO <- PUT https://restful-booker.herokuapp.com/booking/1162 200 (219ms)
+<![CDATA[[2026-05-17T17:40:04.138Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:04.357Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (219ms)
+[2026-05-17T17:40:04.357Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:04.580Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (222ms)
+[2026-05-17T17:40:04.580Z]INFO -> PUT https://restful-booker.herokuapp.com/booking/16288{"headers":["Authorization","Cookie"]}
+[2026-05-17T17:40:04.805Z]INFO <- PUT https://restful-booker.herokuapp.com/booking/16288 200 (225ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › PUT /booking/:id response time is acceptable @performance" classname="booking-create-update.spec.ts" time="0.667">
+<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › PUT /booking/:id response time is acceptable @performance" classname="booking-create-update.spec.ts" time="0.685">
 <system-out>
-<![CDATA[[2026-05-17T11:12:52.391Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:52.610Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (219ms)
-[2026-05-17T11:12:52.610Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:52.832Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (221ms)
-[2026-05-17T11:12:52.833Z]INFO -> PUT https://restful-booker.herokuapp.com/booking/1166{"headers":["Authorization","Cookie"]}
-[2026-05-17T11:12:53.054Z]INFO <- PUT https://restful-booker.herokuapp.com/booking/1166 200 (221ms)
+<![CDATA[[2026-05-17T17:40:04.320Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:04.545Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (224ms)
+[2026-05-17T17:40:04.545Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:04.773Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (227ms)
+[2026-05-17T17:40:04.774Z]INFO -> PUT https://restful-booker.herokuapp.com/booking/16292{"headers":["Authorization","Cookie"]}
+[2026-05-17T17:40:05.000Z]INFO <- PUT https://restful-booker.herokuapp.com/booking/16292 200 (226ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › PUT /booking/:id without token returns error @security" classname="booking-create-update.spec.ts" time="0.452">
+<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › PUT /booking/:id without token returns error @security" classname="booking-create-update.spec.ts" time="0.454">
 <system-out>
-<![CDATA[[2026-05-17T11:12:52.405Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:52.633Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (228ms)
-[2026-05-17T11:12:52.633Z]INFO -> PUT https://restful-booker.herokuapp.com/booking/1167{"headers":["Authorization"]}
-[2026-05-17T11:12:52.852Z]INFO <- PUT https://restful-booker.herokuapp.com/booking/1167 403 (219ms)
+<![CDATA[[2026-05-17T17:40:04.323Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:04.544Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (219ms)
+[2026-05-17T17:40:04.544Z]INFO -> PUT https://restful-booker.herokuapp.com/booking/16293{"headers":["Authorization"]}
+[2026-05-17T17:40:04.772Z]INFO <- PUT https://restful-booker.herokuapp.com/booking/16293 403 (225ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › PUT /booking/:id with invalid token returns error @security" classname="booking-create-update.spec.ts" time="0.445">
+<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › PUT /booking/:id with invalid token returns error @security" classname="booking-create-update.spec.ts" time="0.447">
 <system-out>
-<![CDATA[[2026-05-17T11:12:52.866Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:53.085Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (219ms)
-[2026-05-17T11:12:53.086Z]INFO -> PUT https://restful-booker.herokuapp.com/booking/1173{"headers":["Authorization","Cookie"]}
-[2026-05-17T11:12:53.307Z]INFO <- PUT https://restful-booker.herokuapp.com/booking/1173 403 (221ms)
+<![CDATA[[2026-05-17T17:40:04.788Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:05.007Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (218ms)
+[2026-05-17T17:40:05.007Z]INFO -> PUT https://restful-booker.herokuapp.com/booking/16298{"headers":["Authorization","Cookie"]}
+[2026-05-17T17:40:05.231Z]INFO <- PUT https://restful-booker.herokuapp.com/booking/16298 403 (224ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › PUT /booking/:id with non-existent booking ID returns error @regression" classname="booking-create-update.spec.ts" time="0.447">
+<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › PUT /booking/:id with non-existent booking ID returns error @regression" classname="booking-create-update.spec.ts" time="0.448">
 <system-out>
-<![CDATA[[2026-05-17T11:12:52.872Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:53.091Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (217ms)
-[2026-05-17T11:12:53.091Z]INFO -> PUT https://restful-booker.herokuapp.com/booking/999999{"headers":["Authorization","Cookie"]}
-[2026-05-17T11:12:53.315Z]INFO <- PUT https://restful-booker.herokuapp.com/booking/999999 405 (224ms)
+<![CDATA[[2026-05-17T17:40:04.793Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:05.013Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (218ms)
+[2026-05-17T17:40:05.013Z]INFO -> PUT https://restful-booker.herokuapp.com/booking/999999{"headers":["Authorization","Cookie"]}
+[2026-05-17T17:40:05.237Z]INFO <- PUT https://restful-booker.herokuapp.com/booking/999999 405 (223ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › PUT /booking/:id with invalid booking ID format @regression" classname="booking-create-update.spec.ts" time="0.443">
+<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › PUT /booking/:id with invalid booking ID format @regression" classname="booking-create-update.spec.ts" time="0.449">
 <system-out>
-<![CDATA[[2026-05-17T11:12:52.889Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:53.107Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (217ms)
-[2026-05-17T11:12:53.107Z]INFO -> PUT https://restful-booker.herokuapp.com/booking/abc{"headers":["Authorization","Cookie"]}
-[2026-05-17T11:12:53.331Z]INFO <- PUT https://restful-booker.herokuapp.com/booking/abc 405 (223ms)
+<![CDATA[[2026-05-17T17:40:04.796Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:05.018Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (221ms)
+[2026-05-17T17:40:05.018Z]INFO -> PUT https://restful-booker.herokuapp.com/booking/abc{"headers":["Authorization","Cookie"]}
+[2026-05-17T17:40:05.242Z]INFO <- PUT https://restful-booker.herokuapp.com/booking/abc 405 (223ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › PUT /booking/:id with missing firstname @regression" classname="booking-create-update.spec.ts" time="0.668">
+<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › PUT /booking/:id with missing firstname @regression" classname="booking-create-update.spec.ts" time="0.681">
 <system-out>
-<![CDATA[[2026-05-17T11:12:52.893Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:53.112Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (218ms)
-[2026-05-17T11:12:53.112Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:53.334Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (222ms)
-[2026-05-17T11:12:53.334Z]INFO -> PUT https://restful-booker.herokuapp.com/booking/1174{"headers":["Authorization","Cookie"]}
-[2026-05-17T11:12:53.558Z]INFO <- PUT https://restful-booker.herokuapp.com/booking/1174 200 (223ms)
+<![CDATA[[2026-05-17T17:40:04.799Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:05.018Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (219ms)
+[2026-05-17T17:40:05.018Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:05.245Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (226ms)
+[2026-05-17T17:40:05.245Z]INFO -> PUT https://restful-booker.herokuapp.com/booking/16299{"headers":["Authorization","Cookie"]}
+[2026-05-17T17:40:05.474Z]INFO <- PUT https://restful-booker.herokuapp.com/booking/16299 200 (226ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › PUT /booking/:id with invalid totalprice @regression" classname="booking-create-update.spec.ts" time="0.674">
+<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › PUT /booking/:id with invalid totalprice @regression" classname="booking-create-update.spec.ts" time="0.676">
 <system-out>
-<![CDATA[[2026-05-17T11:12:52.898Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:53.122Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (224ms)
-[2026-05-17T11:12:53.122Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:53.342Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (220ms)
-[2026-05-17T11:12:53.342Z]INFO -> PUT https://restful-booker.herokuapp.com/booking/1175{"headers":["Authorization","Cookie"]}
-[2026-05-17T11:12:53.569Z]INFO <- PUT https://restful-booker.herokuapp.com/booking/1175 200 (227ms)
+<![CDATA[[2026-05-17T17:40:04.818Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:05.038Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (220ms)
+[2026-05-17T17:40:05.038Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:05.263Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (225ms)
+[2026-05-17T17:40:05.264Z]INFO -> PUT https://restful-booker.herokuapp.com/booking/16300{"headers":["Authorization","Cookie"]}
+[2026-05-17T17:40:05.490Z]INFO <- PUT https://restful-booker.herokuapp.com/booking/16300 200 (226ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › PUT /booking/:id with invalid checkin date @regression" classname="booking-create-update.spec.ts" time="0.676">
+<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › PUT /booking/:id with invalid checkin date @regression" classname="booking-create-update.spec.ts" time="0.672">
 <system-out>
-<![CDATA[[2026-05-17T11:12:52.900Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:53.122Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (222ms)
-[2026-05-17T11:12:53.122Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:53.346Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (224ms)
-[2026-05-17T11:12:53.346Z]INFO -> PUT https://restful-booker.herokuapp.com/booking/1176{"headers":["Authorization","Cookie"]}
-[2026-05-17T11:12:53.574Z]INFO <- PUT https://restful-booker.herokuapp.com/booking/1176 200 (228ms)
+<![CDATA[[2026-05-17T17:40:04.824Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:05.045Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (221ms)
+[2026-05-17T17:40:05.045Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:05.266Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (221ms)
+[2026-05-17T17:40:05.266Z]INFO -> PUT https://restful-booker.herokuapp.com/booking/16301{"headers":["Authorization","Cookie"]}
+[2026-05-17T17:40:05.493Z]INFO <- PUT https://restful-booker.herokuapp.com/booking/16301 200 (227ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › PUT /booking/:id with SQL injection in firstname @security" classname="booking-create-update.spec.ts" time="0.906">
+<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › PUT /booking/:id with SQL injection in firstname @security" classname="booking-create-update.spec.ts" time="0.911">
 <system-out>
-<![CDATA[[2026-05-17T11:12:53.069Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:53.292Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (223ms)
-[2026-05-17T11:12:53.292Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:53.514Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (220ms)
-[2026-05-17T11:12:53.515Z]INFO -> PUT https://restful-booker.herokuapp.com/booking/1178{"headers":["Authorization","Cookie"]}
-[2026-05-17T11:12:53.745Z]INFO <- PUT https://restful-booker.herokuapp.com/booking/1178 200 (230ms)
-[2026-05-17T11:12:53.745Z]INFO -> GET https://restful-booker.herokuapp.com/booking/1178{"headers":["Authorization"]}
-[2026-05-17T11:12:53.972Z]INFO <- GET https://restful-booker.herokuapp.com/booking/1178 200 (226ms)
+<![CDATA[[2026-05-17T17:40:05.016Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:05.242Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (225ms)
+[2026-05-17T17:40:05.242Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:05.470Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (227ms)
+[2026-05-17T17:40:05.471Z]INFO -> PUT https://restful-booker.herokuapp.com/booking/16304{"headers":["Authorization","Cookie"]}
+[2026-05-17T17:40:05.696Z]INFO <- PUT https://restful-booker.herokuapp.com/booking/16304 200 (224ms)
+[2026-05-17T17:40:05.697Z]INFO -> GET https://restful-booker.herokuapp.com/booking/16304{"headers":["Authorization"]}
+[2026-05-17T17:40:05.921Z]INFO <- GET https://restful-booker.herokuapp.com/booking/16304 200 (223ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › PUT /booking/:id with very long firstname @edge-case" classname="booking-create-update.spec.ts" time="0.678">
+<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › PUT /booking/:id with very long firstname @edge-case" classname="booking-create-update.spec.ts" time="0.68">
 <system-out>
-<![CDATA[[2026-05-17T11:12:53.322Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:53.544Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (221ms)
-[2026-05-17T11:12:53.544Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:53.768Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (223ms)
-[2026-05-17T11:12:53.768Z]INFO -> PUT https://restful-booker.herokuapp.com/booking/1182{"headers":["Authorization","Cookie"]}
-[2026-05-17T11:12:53.998Z]INFO <- PUT https://restful-booker.herokuapp.com/booking/1182 200 (229ms)
+<![CDATA[[2026-05-17T17:40:05.247Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:05.475Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (224ms)
+[2026-05-17T17:40:05.475Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:05.696Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (220ms)
+[2026-05-17T17:40:05.697Z]INFO -> PUT https://restful-booker.herokuapp.com/booking/16307{"headers":["Authorization","Cookie"]}
+[2026-05-17T17:40:05.920Z]INFO <- PUT https://restful-booker.herokuapp.com/booking/16307 200 (223ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › PUT /booking/:id with zero ID @edge-case" classname="booking-create-update.spec.ts" time="0.454">
+<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › PUT /booking/:id with zero ID @edge-case" classname="booking-create-update.spec.ts" time="0.453">
 <system-out>
-<![CDATA[[2026-05-17T11:12:53.329Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:53.552Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (223ms)
-[2026-05-17T11:12:53.553Z]INFO -> PUT https://restful-booker.herokuapp.com/booking/0{"headers":["Authorization","Cookie"]}
-[2026-05-17T11:12:53.781Z]INFO <- PUT https://restful-booker.herokuapp.com/booking/0 405 (227ms)
+<![CDATA[[2026-05-17T17:40:05.254Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:05.478Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (223ms)
+[2026-05-17T17:40:05.478Z]INFO -> PUT https://restful-booker.herokuapp.com/booking/0{"headers":["Authorization","Cookie"]}
+[2026-05-17T17:40:05.702Z]INFO <- PUT https://restful-booker.herokuapp.com/booking/0 405 (223ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › PUT /booking/:id with negative ID @edge-case" classname="booking-create-update.spec.ts" time="0.445">
+<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › PUT /booking/:id with negative ID @edge-case" classname="booking-create-update.spec.ts" time="0.448">
 <system-out>
-<![CDATA[[2026-05-17T11:12:53.340Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:53.566Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (225ms)
-[2026-05-17T11:12:53.566Z]INFO -> PUT https://restful-booker.herokuapp.com/booking/-1{"headers":["Authorization","Cookie"]}
-[2026-05-17T11:12:53.784Z]INFO <- PUT https://restful-booker.herokuapp.com/booking/-1 405 (217ms)
+<![CDATA[[2026-05-17T17:40:05.258Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:05.481Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (222ms)
+[2026-05-17T17:40:05.481Z]INFO -> PUT https://restful-booker.herokuapp.com/booking/-1{"headers":["Authorization","Cookie"]}
+[2026-05-17T17:40:05.702Z]INFO <- PUT https://restful-booker.herokuapp.com/booking/-1 405 (220ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › PUT /booking/:id has proper Content-Type header in response @smoke" classname="booking-create-update.spec.ts" time="0.662">
+<testcase name="Booking API - CreateBooking &amp; UpdateBooking @booking › PUT /booking/:id has proper Content-Type header in response @smoke" classname="booking-create-update.spec.ts" time="0.666">
 <system-out>
-<![CDATA[[2026-05-17T11:12:53.572Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:53.789Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (216ms)
-[2026-05-17T11:12:53.789Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:54.010Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (221ms)
-[2026-05-17T11:12:54.011Z]INFO -> PUT https://restful-booker.herokuapp.com/booking/1185{"headers":["Authorization","Cookie"]}
-[2026-05-17T11:12:54.230Z]INFO <- PUT https://restful-booker.herokuapp.com/booking/1185 200 (218ms)
+<![CDATA[[2026-05-17T17:40:05.493Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:05.712Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (218ms)
+[2026-05-17T17:40:05.712Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:05.932Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (219ms)
+[2026-05-17T17:40:05.932Z]INFO -> PUT https://restful-booker.herokuapp.com/booking/16309{"headers":["Authorization","Cookie"]}
+[2026-05-17T17:40:06.155Z]INFO <- PUT https://restful-booker.herokuapp.com/booking/16309 200 (222ms)
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="booking-delete.spec.ts" timestamp="2026-05-17T11:12:48.222Z" hostname="api" tests="24" failures="1" skipped="0" time="15.389" errors="0">
-<testcase name="Booking API - DeleteBooking @booking › DELETE /booking/:id with valid token deletes booking @smoke" classname="booking-delete.spec.ts" time="0.666">
+<testsuite name="booking-delete.spec.ts" timestamp="2026-05-17T17:40:00.765Z" hostname="api" tests="24" failures="1" skipped="0" time="14.685" errors="0">
+<testcase name="Booking API - DeleteBooking @booking › DELETE /booking/:id with valid token deletes booking @smoke" classname="booking-delete.spec.ts" time="0.664">
 <system-out>
-<![CDATA[[2026-05-17T11:12:53.585Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:53.804Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (219ms)
-[2026-05-17T11:12:53.804Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:54.026Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (222ms)
-[2026-05-17T11:12:54.026Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/1186{"headers":["Authorization","Cookie"]}
-[2026-05-17T11:12:54.248Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/1186 201 (222ms)
+<![CDATA[[2026-05-17T17:40:05.505Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:05.724Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (219ms)
+[2026-05-17T17:40:05.724Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:05.943Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (219ms)
+[2026-05-17T17:40:05.944Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/16310{"headers":["Authorization","Cookie"]}
+[2026-05-17T17:40:06.166Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/16310 201 (222ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - DeleteBooking @booking › DELETE /booking/:id returns 201 Created status @smoke" classname="booking-delete.spec.ts" time="0.669">
+<testcase name="Booking API - DeleteBooking @booking › DELETE /booking/:id returns 201 Created status @smoke" classname="booking-delete.spec.ts" time="0.667">
 <system-out>
-<![CDATA[[2026-05-17T11:12:53.605Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:53.825Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (220ms)
-[2026-05-17T11:12:53.825Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:54.051Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (226ms)
-[2026-05-17T11:12:54.051Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/1187{"headers":["Authorization","Cookie"]}
-[2026-05-17T11:12:54.272Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/1187 201 (220ms)
+<![CDATA[[2026-05-17T17:40:05.508Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:05.728Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (220ms)
+[2026-05-17T17:40:05.728Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:05.950Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (222ms)
+[2026-05-17T17:40:05.950Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/16311{"headers":["Authorization","Cookie"]}
+[2026-05-17T17:40:06.172Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/16311 201 (222ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - DeleteBooking @booking › DELETE /booking/:id response contains OK message @smoke" classname="booking-delete.spec.ts" time="0.662">
+<testcase name="Booking API - DeleteBooking @booking › DELETE /booking/:id response contains OK message @smoke" classname="booking-delete.spec.ts" time="0.657">
 <system-out>
-<![CDATA[[2026-05-17T11:12:53.794Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:54.016Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (221ms)
-[2026-05-17T11:12:54.016Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:54.234Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (218ms)
-[2026-05-17T11:12:54.234Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/1191{"headers":["Authorization","Cookie"]}
-[2026-05-17T11:12:54.453Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/1191 201 (219ms)
+<![CDATA[[2026-05-17T17:40:05.722Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:05.938Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (216ms)
+[2026-05-17T17:40:05.938Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:06.157Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (218ms)
+[2026-05-17T17:40:06.157Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/16314{"headers":["Authorization","Cookie"]}
+[2026-05-17T17:40:06.376Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/16314 201 (218ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - DeleteBooking @booking › DELETE /booking/:id deletes booking successfully - verify with GET @regression" classname="booking-delete.spec.ts" time="0.883">
+<testcase name="Booking API - DeleteBooking @booking › DELETE /booking/:id deletes booking successfully - verify with GET @regression" classname="booking-delete.spec.ts" time="0.886">
 <system-out>
-<![CDATA[[2026-05-17T11:12:53.797Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:54.017Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (220ms)
-[2026-05-17T11:12:54.018Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:54.234Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (216ms)
-[2026-05-17T11:12:54.234Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/1192{"headers":["Authorization","Cookie"]}
-[2026-05-17T11:12:54.452Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/1192 201 (218ms)
-[2026-05-17T11:12:54.452Z]INFO -> GET https://restful-booker.herokuapp.com/booking/1192{"headers":["Authorization"]}
-[2026-05-17T11:12:54.677Z]INFO <- GET https://restful-booker.herokuapp.com/booking/1192 404 (225ms)
+<![CDATA[[2026-05-17T17:40:05.725Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:05.942Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (217ms)
+[2026-05-17T17:40:05.943Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:06.160Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (216ms)
+[2026-05-17T17:40:06.160Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/16315{"headers":["Authorization","Cookie"]}
+[2026-05-17T17:40:06.378Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/16315 201 (217ms)
+[2026-05-17T17:40:06.378Z]INFO -> GET https://restful-booker.herokuapp.com/booking/16315{"headers":["Authorization"]}
+[2026-05-17T17:40:06.604Z]INFO <- GET https://restful-booker.herokuapp.com/booking/16315 404 (224ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - DeleteBooking @booking › DELETE /booking/:id response time is acceptable @performance" classname="booking-delete.spec.ts" time="0.664">
+<testcase name="Booking API - DeleteBooking @booking › DELETE /booking/:id response time is acceptable @performance" classname="booking-delete.spec.ts" time="0.67">
 <system-out>
-<![CDATA[[2026-05-17T11:12:53.989Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:54.211Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (221ms)
-[2026-05-17T11:12:54.212Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:54.430Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (219ms)
-[2026-05-17T11:12:54.431Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/1194{"headers":["Authorization","Cookie"]}
-[2026-05-17T11:12:54.650Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/1194 201 (219ms)
+<![CDATA[[2026-05-17T17:40:05.943Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:06.163Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (219ms)
+[2026-05-17T17:40:06.163Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:06.384Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (220ms)
+[2026-05-17T17:40:06.384Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/16317{"headers":["Authorization","Cookie"]}
+[2026-05-17T17:40:06.609Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/16317 201 (224ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - DeleteBooking @booking › DELETE /booking/:id can delete multiple bookings independently @regression" classname="booking-delete.spec.ts" time="1.551">
+<testcase name="Booking API - DeleteBooking @booking › DELETE /booking/:id can delete multiple bookings independently @regression" classname="booking-delete.spec.ts" time="1.56">
 <system-out>
-<![CDATA[[2026-05-17T11:12:54.010Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:54.231Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (220ms)
-[2026-05-17T11:12:54.231Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:54.450Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (219ms)
-[2026-05-17T11:12:54.451Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:54.672Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (220ms)
-[2026-05-17T11:12:54.672Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/1196{"headers":["Authorization","Cookie"]}
-[2026-05-17T11:12:54.891Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/1196 201 (219ms)
-[2026-05-17T11:12:54.891Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/1199{"headers":["Authorization","Cookie"]}
-[2026-05-17T11:12:55.114Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/1199 201 (222ms)
-[2026-05-17T11:12:55.115Z]INFO -> GET https://restful-booker.herokuapp.com/booking/1196{"headers":["Authorization"]}
-[2026-05-17T11:12:55.338Z]INFO <- GET https://restful-booker.herokuapp.com/booking/1196 404 (223ms)
-[2026-05-17T11:12:55.338Z]INFO -> GET https://restful-booker.herokuapp.com/booking/1199{"headers":["Authorization"]}
-[2026-05-17T11:12:55.560Z]INFO <- GET https://restful-booker.herokuapp.com/booking/1199 404 (221ms)
+<![CDATA[[2026-05-17T17:40:05.947Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:06.164Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (217ms)
+[2026-05-17T17:40:06.164Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:06.380Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (216ms)
+[2026-05-17T17:40:06.380Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:06.608Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (225ms)
+[2026-05-17T17:40:06.608Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/16318{"headers":["Authorization","Cookie"]}
+[2026-05-17T17:40:06.831Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/16318 201 (222ms)
+[2026-05-17T17:40:06.832Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/16320{"headers":["Authorization","Cookie"]}
+[2026-05-17T17:40:07.057Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/16320 201 (225ms)
+[2026-05-17T17:40:07.058Z]INFO -> GET https://restful-booker.herokuapp.com/booking/16318{"headers":["Authorization"]}
+[2026-05-17T17:40:07.278Z]INFO <- GET https://restful-booker.herokuapp.com/booking/16318 404 (219ms)
+[2026-05-17T17:40:07.278Z]INFO -> GET https://restful-booker.herokuapp.com/booking/16320{"headers":["Authorization"]}
+[2026-05-17T17:40:07.501Z]INFO <- GET https://restful-booker.herokuapp.com/booking/16320 404 (221ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - DeleteBooking @booking › DELETE /booking/:id with valid numeric ID string @regression" classname="booking-delete.spec.ts" time="0.661">
+<testcase name="Booking API - DeleteBooking @booking › DELETE /booking/:id with valid numeric ID string @regression" classname="booking-delete.spec.ts" time="0.667">
 <system-out>
-<![CDATA[[2026-05-17T11:12:54.247Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:54.468Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (221ms)
-[2026-05-17T11:12:54.468Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:54.688Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (220ms)
-[2026-05-17T11:12:54.688Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/1201{"headers":["Authorization","Cookie"]}
-[2026-05-17T11:12:54.906Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/1201 201 (218ms)
+<![CDATA[[2026-05-17T17:40:06.172Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:06.391Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (219ms)
+[2026-05-17T17:40:06.391Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:06.612Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (220ms)
+[2026-05-17T17:40:06.612Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/16321{"headers":["Authorization","Cookie"]}
+[2026-05-17T17:40:06.834Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/16321 201 (220ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - DeleteBooking @booking › DELETE /booking/:id without token returns error @security" classname="booking-delete.spec.ts" time="0.45">
+<testcase name="Booking API - DeleteBooking @booking › DELETE /booking/:id without token returns error @security" classname="booking-delete.spec.ts" time="0.441">
 <system-out>
-<![CDATA[[2026-05-17T11:12:54.259Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:54.485Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (226ms)
-[2026-05-17T11:12:54.485Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/1203{"headers":["Authorization"]}
-[2026-05-17T11:12:54.707Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/1203 403 (222ms)
+<![CDATA[[2026-05-17T17:40:06.176Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:06.395Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (218ms)
+[2026-05-17T17:40:06.395Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/16322{"headers":["Authorization"]}
+[2026-05-17T17:40:06.614Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/16322 403 (218ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - DeleteBooking @booking › DELETE /booking/:id with invalid token returns error @security" classname="booking-delete.spec.ts" time="0.448">
+<testcase name="Booking API - DeleteBooking @booking › DELETE /booking/:id with invalid token returns error @security" classname="booking-delete.spec.ts" time="0.445">
 <system-out>
-<![CDATA[[2026-05-17T11:12:54.282Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:54.505Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (222ms)
-[2026-05-17T11:12:54.505Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/1204{"headers":["Authorization","Cookie"]}
-[2026-05-17T11:12:54.727Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/1204 403 (222ms)
+<![CDATA[[2026-05-17T17:40:06.181Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:06.401Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (220ms)
+[2026-05-17T17:40:06.401Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/16323{"headers":["Authorization","Cookie"]}
+[2026-05-17T17:40:06.623Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/16323 403 (222ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - DeleteBooking @booking › DELETE /booking/:id with non-existent booking ID returns error @regression" classname="booking-delete.spec.ts" time="0.444">
+<testcase name="Booking API - DeleteBooking @booking › DELETE /booking/:id with non-existent booking ID returns error @regression" classname="booking-delete.spec.ts" time="0.45">
 <system-out>
-<![CDATA[[2026-05-17T11:12:54.466Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:54.688Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (221ms)
-[2026-05-17T11:12:54.688Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/999999{"headers":["Authorization","Cookie"]}
-[2026-05-17T11:12:54.907Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/999999 405 (219ms)
+<![CDATA[[2026-05-17T17:40:06.386Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:06.608Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (220ms)
+[2026-05-17T17:40:06.608Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/999999{"headers":["Authorization","Cookie"]}
+[2026-05-17T17:40:06.830Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/999999 405 (220ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - DeleteBooking @booking › DELETE /booking/:id with invalid ID format returns error @regression" classname="booking-delete.spec.ts" time="0.449">
+<testcase name="Booking API - DeleteBooking @booking › DELETE /booking/:id with invalid ID format returns error @regression" classname="booking-delete.spec.ts" time="0.439">
 <system-out>
-<![CDATA[[2026-05-17T11:12:54.664Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:54.882Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (217ms)
-[2026-05-17T11:12:54.882Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/abc{"headers":["Authorization","Cookie"]}
-[2026-05-17T11:12:55.106Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/abc 405 (223ms)
+<![CDATA[[2026-05-17T17:40:06.623Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:06.841Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (218ms)
+[2026-05-17T17:40:06.841Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/abc{"headers":["Authorization","Cookie"]}
+[2026-05-17T17:40:07.060Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/abc 405 (219ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - DeleteBooking @booking › DELETE /booking/:id with zero ID returns error @edge-case" classname="booking-delete.spec.ts" time="0.442">
+<testcase name="Booking API - DeleteBooking @booking › DELETE /booking/:id with zero ID returns error @edge-case" classname="booking-delete.spec.ts" time="0.444">
 <system-out>
-<![CDATA[[2026-05-17T11:12:54.689Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:54.906Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (217ms)
-[2026-05-17T11:12:54.906Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/0{"headers":["Authorization","Cookie"]}
-[2026-05-17T11:12:55.127Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/0 405 (221ms)
+<![CDATA[[2026-05-17T17:40:06.625Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:06.844Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (219ms)
+[2026-05-17T17:40:06.844Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/0{"headers":["Authorization","Cookie"]}
+[2026-05-17T17:40:07.068Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/0 405 (223ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - DeleteBooking @booking › DELETE /booking/:id with negative ID returns error @edge-case" classname="booking-delete.spec.ts" time="0.442">
+<testcase name="Booking API - DeleteBooking @booking › DELETE /booking/:id with negative ID returns error @edge-case" classname="booking-delete.spec.ts" time="0.451">
 <system-out>
-<![CDATA[[2026-05-17T11:12:54.716Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:54.935Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (218ms)
-[2026-05-17T11:12:54.935Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/-1{"headers":["Authorization","Cookie"]}
-[2026-05-17T11:12:55.156Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/-1 405 (221ms)
+<![CDATA[[2026-05-17T17:40:06.628Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:06.848Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (220ms)
+[2026-05-17T17:40:06.848Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/-1{"headers":["Authorization","Cookie"]}
+[2026-05-17T17:40:07.076Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/-1 405 (227ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - DeleteBooking @booking › DELETE /booking/:id with extremely large ID returns error @edge-case" classname="booking-delete.spec.ts" time="0.442">
+<testcase name="Booking API - DeleteBooking @booking › DELETE /booking/:id with extremely large ID returns error @edge-case" classname="booking-delete.spec.ts" time="0.445">
 <system-out>
-<![CDATA[[2026-05-17T11:12:54.736Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:54.955Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (219ms)
-[2026-05-17T11:12:54.955Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/999999999999{"headers":["Authorization","Cookie"]}
-[2026-05-17T11:12:55.176Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/999999999999 405 (220ms)
+<![CDATA[[2026-05-17T17:40:06.635Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:06.855Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (220ms)
+[2026-05-17T17:40:06.855Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/999999999999{"headers":["Authorization","Cookie"]}
+[2026-05-17T17:40:07.078Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/999999999999 405 (222ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - DeleteBooking @booking › DELETE /booking/:id with decimal ID returns error @edge-case" classname="booking-delete.spec.ts" time="0.454">
+<testcase name="Booking API - DeleteBooking @booking › DELETE /booking/:id with decimal ID returns error @edge-case" classname="booking-delete.spec.ts" time="0.446">
 <system-out>
-<![CDATA[[2026-05-17T11:12:54.917Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:55.136Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (219ms)
-[2026-05-17T11:12:55.137Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/1.5{"headers":["Authorization","Cookie"]}
-[2026-05-17T11:12:55.357Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/1.5 201 (220ms)
+<![CDATA[[2026-05-17T17:40:06.848Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:07.072Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (223ms)
+[2026-05-17T17:40:07.072Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/1.5{"headers":["Authorization","Cookie"]}
+[2026-05-17T17:40:07.290Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/1.5 405 (218ms)
+]]>
+</system-out>
+</testcase>
+<testcase name="Booking API - DeleteBooking @booking › DELETE /booking/:id with special characters in ID @security" classname="booking-delete.spec.ts" time="0.448">
+<system-out>
+<![CDATA[[2026-05-17T17:40:06.852Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:07.076Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (224ms)
+[2026-05-17T17:40:07.076Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/1'; DROP TABLE bookings; --{"headers":["Authorization","Cookie"]}
+[2026-05-17T17:40:07.296Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/1'; DROP TABLE bookings; -- 405 (220ms)
+]]>
+</system-out>
+</testcase>
+<testcase name="Booking API - DeleteBooking @booking › DELETE /booking/:id with path traversal attempt @security" classname="booking-delete.spec.ts" time="0.44">
+<system-out>
+<![CDATA[[2026-05-17T17:40:07.071Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:07.289Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (217ms)
+[2026-05-17T17:40:07.289Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/../../../etc/passwd{"headers":["Authorization","Cookie"]}
+[2026-05-17T17:40:07.507Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/../../../etc/passwd 404 (218ms)
+]]>
+</system-out>
+</testcase>
+<testcase name="Booking API - DeleteBooking @booking › DELETE /booking/:id with whitespace ID @edge-case" classname="booking-delete.spec.ts" time="0.441">
+<system-out>
+<![CDATA[[2026-05-17T17:40:07.076Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:07.296Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (219ms)
+[2026-05-17T17:40:07.296Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/   {"headers":["Authorization","Cookie"]}
+[2026-05-17T17:40:07.515Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/    404 (219ms)
+]]>
+</system-out>
+</testcase>
+<testcase name="Booking API - DeleteBooking @booking › DELETE /booking/:id with empty string ID @edge-case" classname="booking-delete.spec.ts" time="0.441">
+<system-out>
+<![CDATA[[2026-05-17T17:40:07.086Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:07.305Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (218ms)
+[2026-05-17T17:40:07.305Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/{"headers":["Authorization","Cookie"]}
+[2026-05-17T17:40:07.524Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/ 404 (219ms)
+]]>
+</system-out>
+</testcase>
+<testcase name="Booking API - DeleteBooking @booking › DELETE /booking/:id with hexadecimal ID @edge-case" classname="booking-delete.spec.ts" time="0.456">
+<system-out>
+<![CDATA[[2026-05-17T17:40:07.088Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:07.310Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (222ms)
+[2026-05-17T17:40:07.310Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/0x1A{"headers":["Authorization","Cookie"]}
+[2026-05-17T17:40:07.532Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/0x1A 201 (222ms)
 
-[[ATTACHMENT|../test-results/booking-delete-Booking-API-2fed7--ID-returns-error-edge-case-api/error-context.md]]
+[[ATTACHMENT|../test-results/booking-delete-Booking-API-2ee3d-th-hexadecimal-ID-edge-case-api/error-context.md]]
 
-[[ATTACHMENT|../test-results/booking-delete-Booking-API-2fed7--ID-returns-error-edge-case-api/trace.zip]]
+[[ATTACHMENT|../test-results/booking-delete-Booking-API-2ee3d-th-hexadecimal-ID-edge-case-api/trace.zip]]
 ]]>
 </system-out>
 <failure message="expect(received).toContain(expected) // indexOf" type="expect.toContain">
-<![CDATA[  [api] › booking-delete.spec.ts:249:7 › Booking API - DeleteBooking @booking › DELETE /booking/:id with decimal ID returns error @edge-case 
+<![CDATA[  [api] › booking-delete.spec.ts:311:7 › Booking API - DeleteBooking @booking › DELETE /booking/:id with hexadecimal ID @edge-case 
 
     Error: expect(received).toContain(expected) // indexOf
 
     Expected value: 201
     Received array: [400, 404, 405, 500]
 
-      256 |     const deleteResponse = await bookingClient.delete('1.5', token);
-      257 |
-    > 258 |     expect([400, 404, 405, 500]).toContain(deleteResponse.status);
+      318 |     const deleteResponse = await bookingClient.delete('0x1A', token);
+      319 |
+    > 320 |     expect([400, 404, 405, 500]).toContain(deleteResponse.status);
           |                                  ^
-      259 |   });
-      260 |
-      261 |   test('DELETE /booking/:id with special characters in ID @security', async ({ bookingClient, authClient }) => {
-        at /Users/vinayakm/Documents/TestVagrantWorkspace/Api/tests/booking-delete.spec.ts:258:34
+      321 |   });
+      322 |
+      323 |   test('DELETE /booking/:id twice on same booking fails second time @regression', async ({ bookingClient, authClient }) => {
+        at /Users/vinayakm/Documents/TestVagrantWorkspace/Api/tests/booking-delete.spec.ts:320:34
 
-    Error Context: ../test-results/booking-delete-Booking-API-2fed7--ID-returns-error-edge-case-api/error-context.md
+    Error Context: ../test-results/booking-delete-Booking-API-2ee3d-th-hexadecimal-ID-edge-case-api/error-context.md
 
     attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
-    ../test-results/booking-delete-Booking-API-2fed7--ID-returns-error-edge-case-api/trace.zip
+    ../test-results/booking-delete-Booking-API-2ee3d-th-hexadecimal-ID-edge-case-api/trace.zip
     Usage:
 
-        npx playwright show-trace ../test-results/booking-delete-Booking-API-2fed7--ID-returns-error-edge-case-api/trace.zip
+        npx playwright show-trace ../test-results/booking-delete-Booking-API-2ee3d-th-hexadecimal-ID-edge-case-api/trace.zip
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 ]]>
 </failure>
 </testcase>
-<testcase name="Booking API - DeleteBooking @booking › DELETE /booking/:id with special characters in ID @security" classname="booking-delete.spec.ts" time="0.446">
+<testcase name="Booking API - DeleteBooking @booking › DELETE /booking/:id twice on same booking fails second time @regression" classname="booking-delete.spec.ts" time="0.89">
 <system-out>
-<![CDATA[[2026-05-17T11:12:54.920Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:55.141Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (221ms)
-[2026-05-17T11:12:55.141Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/1'; DROP TABLE bookings; --{"headers":["Authorization","Cookie"]}
-[2026-05-17T11:12:55.364Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/1'; DROP TABLE bookings; -- 405 (222ms)
+<![CDATA[[2026-05-17T17:40:07.303Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:07.521Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (218ms)
+[2026-05-17T17:40:07.521Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:07.746Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (224ms)
+[2026-05-17T17:40:07.746Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/16328{"headers":["Authorization","Cookie"]}
+[2026-05-17T17:40:07.964Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/16328 201 (217ms)
+[2026-05-17T17:40:07.964Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/16328{"headers":["Authorization","Cookie"]}
+[2026-05-17T17:40:08.187Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/16328 405 (222ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - DeleteBooking @booking › DELETE /booking/:id with path traversal attempt @security" classname="booking-delete.spec.ts" time="0.444">
+<testcase name="Booking API - DeleteBooking @booking › DELETE /booking/:id with empty token string returns error @security" classname="booking-delete.spec.ts" time="0.442">
 <system-out>
-<![CDATA[[2026-05-17T11:12:55.126Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:55.347Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (220ms)
-[2026-05-17T11:12:55.347Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/../../../etc/passwd{"headers":["Authorization","Cookie"]}
-[2026-05-17T11:12:55.568Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/../../../etc/passwd 404 (221ms)
+<![CDATA[[2026-05-17T17:40:07.310Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:07.528Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (217ms)
+[2026-05-17T17:40:07.528Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/16329{"headers":["Authorization"]}
+[2026-05-17T17:40:07.750Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/16329 403 (222ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - DeleteBooking @booking › DELETE /booking/:id with whitespace ID @edge-case" classname="booking-delete.spec.ts" time="0.446">
+<testcase name="Booking API - DeleteBooking @booking › DELETE /booking/:id idempotency - failed delete should not affect other operations @regression" classname="booking-delete.spec.ts" time="1.124">
 <system-out>
-<![CDATA[[2026-05-17T11:12:55.137Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:55.360Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (223ms)
-[2026-05-17T11:12:55.361Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/   {"headers":["Authorization","Cookie"]}
-[2026-05-17T11:12:55.582Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/    404 (221ms)
+<![CDATA[[2026-05-17T17:40:07.520Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:07.741Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (221ms)
+[2026-05-17T17:40:07.741Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:07.962Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (221ms)
+[2026-05-17T17:40:07.962Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/16335{"headers":["Authorization","Cookie"]}
+[2026-05-17T17:40:08.185Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/16335 403 (222ms)
+[2026-05-17T17:40:08.187Z]INFO -> GET https://restful-booker.herokuapp.com/booking/16335{"headers":["Authorization"]}
+[2026-05-17T17:40:08.412Z]INFO <- GET https://restful-booker.herokuapp.com/booking/16335 200 (224ms)
+[2026-05-17T17:40:08.414Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/16335{"headers":["Authorization","Cookie"]}
+[2026-05-17T17:40:08.637Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/16335 201 (222ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - DeleteBooking @booking › DELETE /booking/:id with empty string ID @edge-case" classname="booking-delete.spec.ts" time="0.438">
+<testcase name="Booking API - DeleteBooking @booking › DELETE /booking/:id response has proper content type @smoke" classname="booking-delete.spec.ts" time="0.671">
 <system-out>
-<![CDATA[[2026-05-17T11:12:55.166Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:55.384Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (218ms)
-[2026-05-17T11:12:55.385Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/{"headers":["Authorization","Cookie"]}
-[2026-05-17T11:12:55.602Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/ 404 (217ms)
-]]>
-</system-out>
-</testcase>
-<testcase name="Booking API - DeleteBooking @booking › DELETE /booking/:id with hexadecimal ID @edge-case" classname="booking-delete.spec.ts" time="0.441">
-<system-out>
-<![CDATA[[2026-05-17T11:12:55.185Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:55.405Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (220ms)
-[2026-05-17T11:12:55.405Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/0x1A{"headers":["Authorization","Cookie"]}
-[2026-05-17T11:12:55.625Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/0x1A 405 (219ms)
-]]>
-</system-out>
-</testcase>
-<testcase name="Booking API - DeleteBooking @booking › DELETE /booking/:id twice on same booking fails second time @regression" classname="booking-delete.spec.ts" time="0.887">
-<system-out>
-<![CDATA[[2026-05-17T11:12:55.374Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:55.593Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (219ms)
-[2026-05-17T11:12:55.593Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:55.819Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (225ms)
-[2026-05-17T11:12:55.819Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/1216{"headers":["Authorization","Cookie"]}
-[2026-05-17T11:12:56.037Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/1216 201 (218ms)
-[2026-05-17T11:12:56.038Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/1216{"headers":["Authorization","Cookie"]}
-[2026-05-17T11:12:56.260Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/1216 405 (221ms)
-]]>
-</system-out>
-</testcase>
-<testcase name="Booking API - DeleteBooking @booking › DELETE /booking/:id with empty token string returns error @security" classname="booking-delete.spec.ts" time="1.191">
-<system-out>
-<![CDATA[[2026-05-17T11:12:55.714Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:56.643Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (928ms)
-[2026-05-17T11:12:56.644Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/1228{"headers":["Authorization"]}
-[2026-05-17T11:12:56.882Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/1228 403 (237ms)
-]]>
-</system-out>
-</testcase>
-<testcase name="Booking API - DeleteBooking @booking › DELETE /booking/:id idempotency - failed delete should not affect other operations @regression" classname="booking-delete.spec.ts" time="1.11">
-<system-out>
-<![CDATA[[2026-05-17T11:12:55.567Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:55.787Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (219ms)
-[2026-05-17T11:12:55.787Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:56.006Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (219ms)
-[2026-05-17T11:12:56.006Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/1219{"headers":["Authorization","Cookie"]}
-[2026-05-17T11:12:56.227Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/1219 403 (221ms)
-[2026-05-17T11:12:56.227Z]INFO -> GET https://restful-booker.herokuapp.com/booking/1219{"headers":["Authorization"]}
-[2026-05-17T11:12:56.450Z]INFO <- GET https://restful-booker.herokuapp.com/booking/1219 200 (223ms)
-[2026-05-17T11:12:56.451Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/1219{"headers":["Authorization","Cookie"]}
-[2026-05-17T11:12:56.674Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/1219 201 (222ms)
-]]>
-</system-out>
-</testcase>
-<testcase name="Booking API - DeleteBooking @booking › DELETE /booking/:id response has proper content type @smoke" classname="booking-delete.spec.ts" time="0.659">
-<system-out>
-<![CDATA[[2026-05-17T11:12:55.575Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:55.795Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (220ms)
-[2026-05-17T11:12:55.795Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
-[2026-05-17T11:12:56.014Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (219ms)
-[2026-05-17T11:12:56.014Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/1220{"headers":["Authorization","Cookie"]}
-[2026-05-17T11:12:56.233Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/1220 201 (219ms)
+<![CDATA[[2026-05-17T17:40:07.523Z]INFO -> POST https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:07.746Z]INFO <- POST https://restful-booker.herokuapp.com/booking 200 (222ms)
+[2026-05-17T17:40:07.746Z]INFO -> POST https://restful-booker.herokuapp.com/auth{"headers":["Authorization"]}
+[2026-05-17T17:40:07.963Z]INFO <- POST https://restful-booker.herokuapp.com/auth 200 (216ms)
+[2026-05-17T17:40:07.963Z]INFO -> DELETE https://restful-booker.herokuapp.com/booking/16336{"headers":["Authorization","Cookie"]}
+[2026-05-17T17:40:08.187Z]INFO <- DELETE https://restful-booker.herokuapp.com/booking/16336 201 (223ms)
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="bookings.spec.ts" timestamp="2026-05-17T11:12:48.222Z" hostname="api" tests="45" failures="0" skipped="0" time="14.7" errors="0">
-<testcase name="Booking API - GetBooking @booking › GET /booking returns list of booking IDs @smoke" classname="bookings.spec.ts" time="0.231">
+<testsuite name="bookings.spec.ts" timestamp="2026-05-17T17:40:00.765Z" hostname="api" tests="45" failures="0" skipped="0" time="43.211" errors="0">
+<testcase name="Booking API - GetBooking @booking › GET /booking returns list of booking IDs @smoke" classname="bookings.spec.ts" time="1.127">
 <system-out>
-<![CDATA[[2026-05-17T11:12:55.591Z]INFO -> GET https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:55.819Z]INFO <- GET https://restful-booker.herokuapp.com/booking 200 (227ms)
+<![CDATA[[2026-05-17T17:40:07.530Z]INFO -> GET https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:08.639Z]INFO <- GET https://restful-booker.herokuapp.com/booking 200 (1106ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - GetBooking @booking › GET /booking list contains valid booking IDs @smoke" classname="bookings.spec.ts" time="0.546">
+<testcase name="Booking API - GetBooking @booking › GET /booking list contains valid booking IDs @smoke" classname="bookings.spec.ts" time="19.49">
 <system-out>
-<![CDATA[[2026-05-17T11:12:55.612Z]INFO -> GET https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:55.836Z]INFO <- GET https://restful-booker.herokuapp.com/booking 200 (224ms)
+<![CDATA[[2026-05-17T17:40:07.535Z]INFO -> GET https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:08.676Z]INFO <- GET https://restful-booker.herokuapp.com/booking 200 (1139ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - GetBooking @booking › GET /booking returns consistent response structure @smoke" classname="bookings.spec.ts" time="0.334">
+<testcase name="Booking API - GetBooking @booking › GET /booking returns consistent response structure @smoke" classname="bookings.spec.ts" time="4.73">
 <system-out>
-<![CDATA[[2026-05-17T11:12:55.634Z]INFO -> GET https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:55.858Z]INFO <- GET https://restful-booker.herokuapp.com/booking 200 (224ms)
+<![CDATA[[2026-05-17T17:40:07.813Z]INFO -> GET https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:09.375Z]INFO <- GET https://restful-booker.herokuapp.com/booking 200 (1561ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - GetBooking @booking › GET /booking with Content-Type application/json @smoke" classname="bookings.spec.ts" time="0.22">
+<testcase name="Booking API - GetBooking @booking › GET /booking with Content-Type application/json @smoke" classname="bookings.spec.ts" time="1.116">
 <system-out>
-<![CDATA[[2026-05-17T11:12:55.827Z]INFO -> GET https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:56.046Z]INFO <- GET https://restful-booker.herokuapp.com/booking 200 (218ms)
+<![CDATA[[2026-05-17T17:40:07.759Z]INFO -> GET https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:08.873Z]INFO <- GET https://restful-booker.herokuapp.com/booking 200 (1113ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - GetBooking @booking › GET /booking/:id returns valid booking details @smoke" classname="bookings.spec.ts" time="0.46">
+<testcase name="Booking API - GetBooking @booking › GET /booking/:id returns valid booking details @smoke" classname="bookings.spec.ts" time="1.329">
 <system-out>
-<![CDATA[[2026-05-17T11:12:55.991Z]INFO -> GET https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:56.221Z]INFO <- GET https://restful-booker.herokuapp.com/booking 200 (230ms)
-[2026-05-17T11:12:56.222Z]INFO -> GET https://restful-booker.herokuapp.com/booking/2{"headers":["Authorization"]}
-[2026-05-17T11:12:56.445Z]INFO <- GET https://restful-booker.herokuapp.com/booking/2 200 (222ms)
+<![CDATA[[2026-05-17T17:40:08.208Z]INFO -> GET https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:09.312Z]INFO <- GET https://restful-booker.herokuapp.com/booking 200 (1103ms)
+[2026-05-17T17:40:09.313Z]INFO -> GET https://restful-booker.herokuapp.com/booking/2{"headers":["Authorization"]}
+[2026-05-17T17:40:09.534Z]INFO <- GET https://restful-booker.herokuapp.com/booking/2 200 (220ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - GetBooking @booking › GET /booking/:id has correct firstname and lastname types @smoke" classname="bookings.spec.ts" time="0.452">
+<testcase name="Booking API - GetBooking @booking › GET /booking/:id has correct firstname and lastname types @smoke" classname="bookings.spec.ts" time="1.337">
 <system-out>
-<![CDATA[[2026-05-17T11:12:56.053Z]INFO -> GET https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:56.276Z]INFO <- GET https://restful-booker.herokuapp.com/booking 200 (223ms)
-[2026-05-17T11:12:56.277Z]INFO -> GET https://restful-booker.herokuapp.com/booking/2{"headers":["Authorization"]}
-[2026-05-17T11:12:56.501Z]INFO <- GET https://restful-booker.herokuapp.com/booking/2 200 (223ms)
+<![CDATA[[2026-05-17T17:40:08.212Z]INFO -> GET https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:09.321Z]INFO <- GET https://restful-booker.herokuapp.com/booking 200 (1108ms)
+[2026-05-17T17:40:09.323Z]INFO -> GET https://restful-booker.herokuapp.com/booking/2{"headers":["Authorization"]}
+[2026-05-17T17:40:09.546Z]INFO <- GET https://restful-booker.herokuapp.com/booking/2 200 (223ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - GetBooking @booking › GET /booking/:id totalprice is non-negative @smoke" classname="bookings.spec.ts" time="0.702">
+<testcase name="Booking API - GetBooking @booking › GET /booking/:id totalprice is non-negative @smoke" classname="bookings.spec.ts" time="1.226">
 <system-out>
-<![CDATA[[2026-05-17T11:12:56.187Z]INFO -> GET https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:56.651Z]INFO <- GET https://restful-booker.herokuapp.com/booking 200 (464ms)
-[2026-05-17T11:12:56.652Z]INFO -> GET https://restful-booker.herokuapp.com/booking/2{"headers":["Authorization"]}
-[2026-05-17T11:12:56.884Z]INFO <- GET https://restful-booker.herokuapp.com/booking/2 200 (231ms)
+<![CDATA[[2026-05-17T17:40:08.661Z]INFO -> GET https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:09.658Z]INFO <- GET https://restful-booker.herokuapp.com/booking 200 (994ms)
+[2026-05-17T17:40:09.663Z]INFO -> GET https://restful-booker.herokuapp.com/booking/2{"headers":["Authorization"]}
+[2026-05-17T17:40:09.883Z]INFO <- GET https://restful-booker.herokuapp.com/booking/2 200 (219ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - GetBooking @booking › GET /booking/:id depositpaid is boolean @smoke" classname="bookings.spec.ts" time="0.448">
+<testcase name="Booking API - GetBooking @booking › GET /booking/:id depositpaid is boolean @smoke" classname="bookings.spec.ts" time="0.688">
 <system-out>
-<![CDATA[[2026-05-17T11:12:56.243Z]INFO -> GET https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:56.468Z]INFO <- GET https://restful-booker.herokuapp.com/booking 200 (225ms)
-[2026-05-17T11:12:56.469Z]INFO -> GET https://restful-booker.herokuapp.com/booking/2{"headers":["Authorization"]}
-[2026-05-17T11:12:56.688Z]INFO <- GET https://restful-booker.herokuapp.com/booking/2 200 (219ms)
+<![CDATA[[2026-05-17T17:40:08.665Z]INFO -> GET https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:09.132Z]INFO <- GET https://restful-booker.herokuapp.com/booking 200 (466ms)
+[2026-05-17T17:40:09.134Z]INFO -> GET https://restful-booker.herokuapp.com/booking/2{"headers":["Authorization"]}
+[2026-05-17T17:40:09.352Z]INFO <- GET https://restful-booker.herokuapp.com/booking/2 200 (218ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - GetBooking @booking › GET /booking/:id bookingdates contains valid dates @smoke" classname="bookings.spec.ts" time="0.673">
+<testcase name="Booking API - GetBooking @booking › GET /booking/:id bookingdates contains valid dates @smoke" classname="bookings.spec.ts" time="0.469">
 <system-out>
-<![CDATA[[2026-05-17T11:12:56.269Z]INFO -> GET https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:56.713Z]INFO <- GET https://restful-booker.herokuapp.com/booking 200 (444ms)
-[2026-05-17T11:12:56.714Z]INFO -> GET https://restful-booker.herokuapp.com/booking/2{"headers":["Authorization"]}
-[2026-05-17T11:12:56.939Z]INFO <- GET https://restful-booker.herokuapp.com/booking/2 200 (224ms)
+<![CDATA[[2026-05-17T17:40:08.881Z]INFO -> GET https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:09.127Z]INFO <- GET https://restful-booker.herokuapp.com/booking 200 (245ms)
+[2026-05-17T17:40:09.128Z]INFO -> GET https://restful-booker.herokuapp.com/booking/2{"headers":["Authorization"]}
+[2026-05-17T17:40:09.348Z]INFO <- GET https://restful-booker.herokuapp.com/booking/2 200 (220ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - GetBooking @booking › GET /booking/:id checkout date is after or equal to checkin date @smoke" classname="bookings.spec.ts" time="0.452">
+<testcase name="Booking API - GetBooking @booking › GET /booking/:id checkout date is after or equal to checkin date @smoke" classname="bookings.spec.ts" time="0.464">
 <system-out>
-<![CDATA[[2026-05-17T11:12:56.461Z]INFO -> GET https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:56.689Z]INFO <- GET https://restful-booker.herokuapp.com/booking 200 (227ms)
-[2026-05-17T11:12:56.689Z]INFO -> GET https://restful-booker.herokuapp.com/booking/2{"headers":["Authorization"]}
-[2026-05-17T11:12:56.909Z]INFO <- GET https://restful-booker.herokuapp.com/booking/2 200 (220ms)
+<![CDATA[[2026-05-17T17:40:09.356Z]INFO -> GET https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:09.597Z]INFO <- GET https://restful-booker.herokuapp.com/booking 200 (241ms)
+[2026-05-17T17:40:09.598Z]INFO -> GET https://restful-booker.herokuapp.com/booking/2{"headers":["Authorization"]}
+[2026-05-17T17:40:09.817Z]INFO <- GET https://restful-booker.herokuapp.com/booking/2 200 (219ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - GetBooking @booking › GET /booking/:id additionalneeds is optional @smoke" classname="bookings.spec.ts" time="0.443">
+<testcase name="Booking API - GetBooking @booking › GET /booking/:id additionalneeds is optional @smoke" classname="bookings.spec.ts" time="0.48">
 <system-out>
-<![CDATA[[2026-05-17T11:12:56.514Z]INFO -> GET https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:56.733Z]INFO <- GET https://restful-booker.herokuapp.com/booking 200 (218ms)
-[2026-05-17T11:12:56.733Z]INFO -> GET https://restful-booker.herokuapp.com/booking/2{"headers":["Authorization"]}
-[2026-05-17T11:12:56.955Z]INFO <- GET https://restful-booker.herokuapp.com/booking/2 200 (221ms)
+<![CDATA[[2026-05-17T17:40:09.359Z]INFO -> GET https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:09.616Z]INFO <- GET https://restful-booker.herokuapp.com/booking 200 (256ms)
+[2026-05-17T17:40:09.618Z]INFO -> GET https://restful-booker.herokuapp.com/booking/2{"headers":["Authorization"]}
+[2026-05-17T17:40:09.836Z]INFO <- GET https://restful-booker.herokuapp.com/booking/2 200 (218ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - GetBooking @booking › GET /booking/:id response contains only expected fields @smoke" classname="bookings.spec.ts" time="0.475">
+<testcase name="Booking API - GetBooking @booking › GET /booking/:id response contains only expected fields @smoke" classname="bookings.spec.ts" time="0.684">
 <system-out>
-<![CDATA[[2026-05-17T11:12:56.697Z]INFO -> GET https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:56.917Z]INFO <- GET https://restful-booker.herokuapp.com/booking 200 (220ms)
-[2026-05-17T11:12:56.918Z]INFO -> GET https://restful-booker.herokuapp.com/booking/2{"headers":["Authorization"]}
-[2026-05-17T11:12:57.167Z]INFO <- GET https://restful-booker.herokuapp.com/booking/2 200 (249ms)
+<![CDATA[[2026-05-17T17:40:09.541Z]INFO -> GET https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:09.993Z]INFO <- GET https://restful-booker.herokuapp.com/booking 200 (451ms)
+[2026-05-17T17:40:09.995Z]INFO -> GET https://restful-booker.herokuapp.com/booking/2{"headers":["Authorization"]}
+[2026-05-17T17:40:10.222Z]INFO <- GET https://restful-booker.herokuapp.com/booking/2 200 (227ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - GetBooking @booking › GET /booking/:id with string ID that is numeric @regression" classname="bookings.spec.ts" time="0.467">
+<testcase name="Booking API - GetBooking @booking › GET /booking/:id with string ID that is numeric @regression" classname="bookings.spec.ts" time="0.685">
 <system-out>
-<![CDATA[[2026-05-17T11:12:56.701Z]INFO -> GET https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:56.920Z]INFO <- GET https://restful-booker.herokuapp.com/booking 200 (219ms)
-[2026-05-17T11:12:56.921Z]INFO -> GET https://restful-booker.herokuapp.com/booking/2{"headers":["Authorization"]}
-[2026-05-17T11:12:57.166Z]INFO <- GET https://restful-booker.herokuapp.com/booking/2 200 (245ms)
+<![CDATA[[2026-05-17T17:40:09.556Z]INFO -> GET https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:10.011Z]INFO <- GET https://restful-booker.herokuapp.com/booking 200 (454ms)
+[2026-05-17T17:40:10.012Z]INFO -> GET https://restful-booker.herokuapp.com/booking/2{"headers":["Authorization"]}
+[2026-05-17T17:40:10.239Z]INFO <- GET https://restful-booker.herokuapp.com/booking/2 200 (226ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - GetBooking @booking › GET /booking/:id with valid Accept header application/json @regression" classname="bookings.spec.ts" time="0.451">
+<testcase name="Booking API - GetBooking @booking › GET /booking/:id with valid Accept header application/json @regression" classname="bookings.spec.ts" time="0.474">
 <system-out>
-<![CDATA[[2026-05-17T11:12:56.898Z]INFO -> GET https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:57.120Z]INFO <- GET https://restful-booker.herokuapp.com/booking 200 (221ms)
-[2026-05-17T11:12:57.121Z]INFO -> GET https://restful-booker.herokuapp.com/booking/2{"headers":["Authorization","Accept"]}
-[2026-05-17T11:12:57.345Z]INFO <- GET https://restful-booker.herokuapp.com/booking/2 200 (224ms)
+<![CDATA[[2026-05-17T17:40:09.825Z]INFO -> GET https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:10.070Z]INFO <- GET https://restful-booker.herokuapp.com/booking 200 (244ms)
+[2026-05-17T17:40:10.072Z]INFO -> GET https://restful-booker.herokuapp.com/booking/2{"headers":["Authorization","Accept"]}
+[2026-05-17T17:40:10.298Z]INFO <- GET https://restful-booker.herokuapp.com/booking/2 200 (226ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - GetBooking @booking › GET /booking/:id response time is acceptable @performance" classname="bookings.spec.ts" time="0.238">
+<testcase name="Booking API - GetBooking @booking › GET /booking/:id response time is acceptable @performance" classname="bookings.spec.ts" time="0.229">
 <system-out>
-<![CDATA[[2026-05-17T11:12:56.932Z]INFO -> GET https://restful-booker.herokuapp.com/booking/1{"headers":["Authorization"]}
-[2026-05-17T11:12:57.167Z]INFO <- GET https://restful-booker.herokuapp.com/booking/1 404 (234ms)
+<![CDATA[[2026-05-17T17:40:09.842Z]INFO -> GET https://restful-booker.herokuapp.com/booking/1{"headers":["Authorization"]}
+[2026-05-17T17:40:10.069Z]INFO <- GET https://restful-booker.herokuapp.com/booking/1 404 (227ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - GetBooking @booking › GET /booking with firstname filter @regression" classname="bookings.spec.ts" time="0.697">
+<testcase name="Booking API - GetBooking @booking › GET /booking with firstname filter @regression" classname="bookings.spec.ts" time="0.701">
 <system-out>
-<![CDATA[[2026-05-17T11:12:56.919Z]INFO -> GET https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:57.170Z]INFO <- GET https://restful-booker.herokuapp.com/booking 200 (250ms)
-[2026-05-17T11:12:57.170Z]INFO -> GET https://restful-booker.herokuapp.com/booking/2{"headers":["Authorization"]}
-[2026-05-17T11:12:57.391Z]INFO <- GET https://restful-booker.herokuapp.com/booking/2 200 (221ms)
-[2026-05-17T11:12:57.392Z]INFO -> GET https://restful-booker.herokuapp.com/booking?firstname=Mary{"headers":["Authorization"]}
-[2026-05-17T11:12:57.614Z]INFO <- GET https://restful-booker.herokuapp.com/booking?firstname=Mary 200 (221ms)
+<![CDATA[[2026-05-17T17:40:09.892Z]INFO -> GET https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:10.133Z]INFO <- GET https://restful-booker.herokuapp.com/booking 200 (240ms)
+[2026-05-17T17:40:10.134Z]INFO -> GET https://restful-booker.herokuapp.com/booking/2{"headers":["Authorization"]}
+[2026-05-17T17:40:10.362Z]INFO <- GET https://restful-booker.herokuapp.com/booking/2 200 (227ms)
+[2026-05-17T17:40:10.362Z]INFO -> GET https://restful-booker.herokuapp.com/booking?firstname=Susan{"headers":["Authorization"]}
+[2026-05-17T17:40:10.589Z]INFO <- GET https://restful-booker.herokuapp.com/booking?firstname=Susan 200 (227ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - GetBooking @booking › GET /booking with lastname filter @regression" classname="bookings.spec.ts" time="0.664">
+<testcase name="Booking API - GetBooking @booking › GET /booking with lastname filter @regression" classname="bookings.spec.ts" time="0.698">
 <system-out>
-<![CDATA[[2026-05-17T11:12:56.950Z]INFO -> GET https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:57.170Z]INFO <- GET https://restful-booker.herokuapp.com/booking 200 (219ms)
-[2026-05-17T11:12:57.170Z]INFO -> GET https://restful-booker.herokuapp.com/booking/2{"headers":["Authorization"]}
-[2026-05-17T11:12:57.391Z]INFO <- GET https://restful-booker.herokuapp.com/booking/2 200 (221ms)
-[2026-05-17T11:12:57.392Z]INFO -> GET https://restful-booker.herokuapp.com/booking?lastname=Jones{"headers":["Authorization"]}
-[2026-05-17T11:12:57.611Z]INFO <- GET https://restful-booker.herokuapp.com/booking?lastname=Jones 200 (219ms)
+<![CDATA[[2026-05-17T17:40:10.075Z]INFO -> GET https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:10.317Z]INFO <- GET https://restful-booker.herokuapp.com/booking 200 (241ms)
+[2026-05-17T17:40:10.318Z]INFO -> GET https://restful-booker.herokuapp.com/booking/2{"headers":["Authorization"]}
+[2026-05-17T17:40:10.537Z]INFO <- GET https://restful-booker.herokuapp.com/booking/2 200 (218ms)
+[2026-05-17T17:40:10.537Z]INFO -> GET https://restful-booker.herokuapp.com/booking?lastname=Jones{"headers":["Authorization"]}
+[2026-05-17T17:40:10.771Z]INFO <- GET https://restful-booker.herokuapp.com/booking?lastname=Jones 200 (234ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - GetBooking @booking › GET /booking with checkin date filter @regression" classname="bookings.spec.ts" time="0.226">
+<testcase name="Booking API - GetBooking @booking › GET /booking with checkin date filter @regression" classname="bookings.spec.ts" time="0.248">
 <system-out>
-<![CDATA[[2026-05-17T11:12:56.961Z]INFO -> GET https://restful-booker.herokuapp.com/booking?checkin=2013-02-23{"headers":["Authorization"]}
-[2026-05-17T11:12:57.185Z]INFO <- GET https://restful-booker.herokuapp.com/booking?checkin=2013-02-23 200 (224ms)
+<![CDATA[[2026-05-17T17:40:10.231Z]INFO -> GET https://restful-booker.herokuapp.com/booking?checkin=2013-02-23{"headers":["Authorization"]}
+[2026-05-17T17:40:10.476Z]INFO <- GET https://restful-booker.herokuapp.com/booking?checkin=2013-02-23 200 (244ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - GetBooking @booking › GET /booking with checkout date filter @regression" classname="bookings.spec.ts" time="0.22">
+<testcase name="Booking API - GetBooking @booking › GET /booking with checkout date filter @regression" classname="bookings.spec.ts" time="0.233">
 <system-out>
-<![CDATA[[2026-05-17T11:12:57.175Z]INFO -> GET https://restful-booker.herokuapp.com/booking?checkout=2014-10-23{"headers":["Authorization"]}
-[2026-05-17T11:12:57.393Z]INFO <- GET https://restful-booker.herokuapp.com/booking?checkout=2014-10-23 200 (218ms)
+<![CDATA[[2026-05-17T17:40:10.246Z]INFO -> GET https://restful-booker.herokuapp.com/booking?checkout=2014-10-23{"headers":["Authorization"]}
+[2026-05-17T17:40:10.475Z]INFO <- GET https://restful-booker.herokuapp.com/booking?checkout=2014-10-23 200 (229ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - GetBooking @booking › GET /booking with multiple filters @regression" classname="bookings.spec.ts" time="0.223">
+<testcase name="Booking API - GetBooking @booking › GET /booking with multiple filters @regression" classname="bookings.spec.ts" time="0.232">
 <system-out>
-<![CDATA[[2026-05-17T11:12:57.179Z]INFO -> GET https://restful-booker.herokuapp.com/booking?firstname=John&lastname=Doe{"headers":["Authorization"]}
-[2026-05-17T11:12:57.398Z]INFO <- GET https://restful-booker.herokuapp.com/booking?firstname=John&lastname=Doe 200 (219ms)
+<![CDATA[[2026-05-17T17:40:10.306Z]INFO -> GET https://restful-booker.herokuapp.com/booking?firstname=John&lastname=Doe{"headers":["Authorization"]}
+[2026-05-17T17:40:10.537Z]INFO <- GET https://restful-booker.herokuapp.com/booking?firstname=John&lastname=Doe 200 (230ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - GetBooking @booking › GET /booking/:id with non-existent ID returns 404 @regression" classname="bookings.spec.ts" time="0.227">
+<testcase name="Booking API - GetBooking @booking › GET /booking/:id with non-existent ID returns 404 @regression" classname="bookings.spec.ts" time="0.233">
 <system-out>
-<![CDATA[[2026-05-17T11:12:57.184Z]INFO -> GET https://restful-booker.herokuapp.com/booking/999999{"headers":["Authorization"]}
-[2026-05-17T11:12:57.407Z]INFO <- GET https://restful-booker.herokuapp.com/booking/999999 404 (222ms)
+<![CDATA[[2026-05-17T17:40:10.483Z]INFO -> GET https://restful-booker.herokuapp.com/booking/999999{"headers":["Authorization"]}
+[2026-05-17T17:40:10.714Z]INFO <- GET https://restful-booker.herokuapp.com/booking/999999 404 (231ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - GetBooking @booking › GET /booking/:id with ID 0 @edge-case" classname="bookings.spec.ts" time="0.219">
+<testcase name="Booking API - GetBooking @booking › GET /booking/:id with ID 0 @edge-case" classname="bookings.spec.ts" time="0.231">
 <system-out>
-<![CDATA[[2026-05-17T11:12:57.192Z]INFO -> GET https://restful-booker.herokuapp.com/booking/0{"headers":["Authorization"]}
-[2026-05-17T11:12:57.409Z]INFO <- GET https://restful-booker.herokuapp.com/booking/0 404 (217ms)
+<![CDATA[[2026-05-17T17:40:10.485Z]INFO -> GET https://restful-booker.herokuapp.com/booking/0{"headers":["Authorization"]}
+[2026-05-17T17:40:10.714Z]INFO <- GET https://restful-booker.herokuapp.com/booking/0 404 (229ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - GetBooking @booking › GET /booking/:id with negative ID @edge-case" classname="bookings.spec.ts" time="0.226">
+<testcase name="Booking API - GetBooking @booking › GET /booking/:id with negative ID @edge-case" classname="bookings.spec.ts" time="0.231">
 <system-out>
-<![CDATA[[2026-05-17T11:12:57.359Z]INFO -> GET https://restful-booker.herokuapp.com/booking/-1{"headers":["Authorization"]}
-[2026-05-17T11:12:57.580Z]INFO <- GET https://restful-booker.herokuapp.com/booking/-1 404 (220ms)
+<![CDATA[[2026-05-17T17:40:10.542Z]INFO -> GET https://restful-booker.herokuapp.com/booking/-1{"headers":["Authorization"]}
+[2026-05-17T17:40:10.771Z]INFO <- GET https://restful-booker.herokuapp.com/booking/-1 404 (229ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - GetBooking @booking › GET /booking/:id with extremely large ID @edge-case" classname="bookings.spec.ts" time="0.219">
+<testcase name="Booking API - GetBooking @booking › GET /booking/:id with extremely large ID @edge-case" classname="bookings.spec.ts" time="0.232">
 <system-out>
-<![CDATA[[2026-05-17T11:12:57.403Z]INFO -> GET https://restful-booker.herokuapp.com/booking/999999999999{"headers":["Authorization"]}
-[2026-05-17T11:12:57.620Z]INFO <- GET https://restful-booker.herokuapp.com/booking/999999999999 404 (217ms)
+<![CDATA[[2026-05-17T17:40:10.601Z]INFO -> GET https://restful-booker.herokuapp.com/booking/999999999999{"headers":["Authorization"]}
+[2026-05-17T17:40:10.831Z]INFO <- GET https://restful-booker.herokuapp.com/booking/999999999999 404 (230ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - GetBooking @booking › GET /booking/:id with non-numeric ID returns error @regression" classname="bookings.spec.ts" time="0.224">
+<testcase name="Booking API - GetBooking @booking › GET /booking/:id with non-numeric ID returns error @regression" classname="bookings.spec.ts" time="0.236">
 <system-out>
-<![CDATA[[2026-05-17T11:12:57.409Z]INFO -> GET https://restful-booker.herokuapp.com/booking/abc{"headers":["Authorization"]}
-[2026-05-17T11:12:57.629Z]INFO <- GET https://restful-booker.herokuapp.com/booking/abc 404 (219ms)
+<![CDATA[[2026-05-17T17:40:10.721Z]INFO -> GET https://restful-booker.herokuapp.com/booking/abc{"headers":["Authorization"]}
+[2026-05-17T17:40:10.956Z]INFO <- GET https://restful-booker.herokuapp.com/booking/abc 404 (235ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - GetBooking @booking › GET /booking/:id with special characters in ID @security" classname="bookings.spec.ts" time="0.222">
+<testcase name="Booking API - GetBooking @booking › GET /booking/:id with special characters in ID @security" classname="bookings.spec.ts" time="0.237">
 <system-out>
-<![CDATA[[2026-05-17T11:12:57.417Z]INFO -> GET https://restful-booker.herokuapp.com/booking/1'; DROP TABLE bookings; --{"headers":["Authorization"]}
-[2026-05-17T11:12:57.637Z]INFO <- GET https://restful-booker.herokuapp.com/booking/1'; DROP TABLE bookings; -- 404 (219ms)
+<![CDATA[[2026-05-17T17:40:10.721Z]INFO -> GET https://restful-booker.herokuapp.com/booking/1'; DROP TABLE bookings; --{"headers":["Authorization"]}
+[2026-05-17T17:40:10.956Z]INFO <- GET https://restful-booker.herokuapp.com/booking/1'; DROP TABLE bookings; -- 404 (235ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - GetBooking @booking › GET /booking/:id with path traversal attempt @security" classname="bookings.spec.ts" time="0.222">
+<testcase name="Booking API - GetBooking @booking › GET /booking/:id with path traversal attempt @security" classname="bookings.spec.ts" time="0.232">
 <system-out>
-<![CDATA[[2026-05-17T11:12:57.416Z]INFO -> GET https://restful-booker.herokuapp.com/booking/../../../etc/passwd{"headers":["Authorization"]}
-[2026-05-17T11:12:57.637Z]INFO <- GET https://restful-booker.herokuapp.com/booking/../../../etc/passwd 404 (220ms)
+<![CDATA[[2026-05-17T17:40:10.777Z]INFO -> GET https://restful-booker.herokuapp.com/booking/../../../etc/passwd{"headers":["Authorization"]}
+[2026-05-17T17:40:11.007Z]INFO <- GET https://restful-booker.herokuapp.com/booking/../../../etc/passwd 404 (230ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - GetBooking @booking › GET /booking/:id with whitespace ID @edge-case" classname="bookings.spec.ts" time="0.23">
+<testcase name="Booking API - GetBooking @booking › GET /booking/:id with whitespace ID @edge-case" classname="bookings.spec.ts" time="0.46">
 <system-out>
-<![CDATA[[2026-05-17T11:12:57.595Z]INFO -> GET https://restful-booker.herokuapp.com/booking/   {"headers":["Authorization"]}
-[2026-05-17T11:12:57.820Z]INFO <- GET https://restful-booker.herokuapp.com/booking/    200 (224ms)
+<![CDATA[[2026-05-17T17:40:10.778Z]INFO -> GET https://restful-booker.herokuapp.com/booking/   {"headers":["Authorization"]}
+[2026-05-17T17:40:11.237Z]INFO <- GET https://restful-booker.herokuapp.com/booking/    200 (458ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - GetBooking @booking › GET /booking/:id with empty string @edge-case" classname="bookings.spec.ts" time="0.224">
+<testcase name="Booking API - GetBooking @booking › GET /booking/:id with empty string @edge-case" classname="bookings.spec.ts" time="0.25">
 <system-out>
-<![CDATA[[2026-05-17T11:12:57.624Z]INFO -> GET https://restful-booker.herokuapp.com/booking/{"headers":["Authorization"]}
-[2026-05-17T11:12:57.845Z]INFO <- GET https://restful-booker.herokuapp.com/booking/ 200 (221ms)
+<![CDATA[[2026-05-17T17:40:10.836Z]INFO -> GET https://restful-booker.herokuapp.com/booking/{"headers":["Authorization"]}
+[2026-05-17T17:40:11.084Z]INFO <- GET https://restful-booker.herokuapp.com/booking/ 200 (247ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - GetBooking @booking › GET /booking/:id with decimal ID @edge-case" classname="bookings.spec.ts" time="0.223">
+<testcase name="Booking API - GetBooking @booking › GET /booking/:id with decimal ID @edge-case" classname="bookings.spec.ts" time="0.23">
 <system-out>
-<![CDATA[[2026-05-17T11:12:57.625Z]INFO -> GET https://restful-booker.herokuapp.com/booking/1.5{"headers":["Authorization"]}
-[2026-05-17T11:12:57.845Z]INFO <- GET https://restful-booker.herokuapp.com/booking/1.5 404 (220ms)
+<![CDATA[[2026-05-17T17:40:10.962Z]INFO -> GET https://restful-booker.herokuapp.com/booking/1.5{"headers":["Authorization"]}
+[2026-05-17T17:40:11.191Z]INFO <- GET https://restful-booker.herokuapp.com/booking/1.5 404 (228ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - GetBooking @booking › GET /booking/:id with hexadecimal ID @edge-case" classname="bookings.spec.ts" time="0.223">
+<testcase name="Booking API - GetBooking @booking › GET /booking/:id with hexadecimal ID @edge-case" classname="bookings.spec.ts" time="0.229">
 <system-out>
-<![CDATA[[2026-05-17T11:12:57.629Z]INFO -> GET https://restful-booker.herokuapp.com/booking/0x1A{"headers":["Authorization"]}
-[2026-05-17T11:12:57.850Z]INFO <- GET https://restful-booker.herokuapp.com/booking/0x1A 404 (221ms)
+<![CDATA[[2026-05-17T17:40:10.963Z]INFO -> GET https://restful-booker.herokuapp.com/booking/0x1A{"headers":["Authorization"]}
+[2026-05-17T17:40:11.191Z]INFO <- GET https://restful-booker.herokuapp.com/booking/0x1A 404 (227ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - GetBooking @booking › GET /booking with non-existent firstname returns empty list @regression" classname="bookings.spec.ts" time="0.222">
+<testcase name="Booking API - GetBooking @booking › GET /booking with non-existent firstname returns empty list @regression" classname="bookings.spec.ts" time="0.225">
 <system-out>
-<![CDATA[[2026-05-17T11:12:57.641Z]INFO -> GET https://restful-booker.herokuapp.com/booking?firstname=NonExistentFirstname12345{"headers":["Authorization"]}
-[2026-05-17T11:12:57.859Z]INFO <- GET https://restful-booker.herokuapp.com/booking?firstname=NonExistentFirstname12345 200 (218ms)
+<![CDATA[[2026-05-17T17:40:11.013Z]INFO -> GET https://restful-booker.herokuapp.com/booking?firstname=NonExistentFirstname12345{"headers":["Authorization"]}
+[2026-05-17T17:40:11.236Z]INFO <- GET https://restful-booker.herokuapp.com/booking?firstname=NonExistentFirstname12345 200 (223ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - GetBooking @booking › GET /booking with non-existent lastname returns empty list @regression" classname="bookings.spec.ts" time="0.22">
+<testcase name="Booking API - GetBooking @booking › GET /booking with non-existent lastname returns empty list @regression" classname="bookings.spec.ts" time="0.234">
 <system-out>
-<![CDATA[[2026-05-17T11:12:57.646Z]INFO -> GET https://restful-booker.herokuapp.com/booking?lastname=NonExistentLastname12345{"headers":["Authorization"]}
-[2026-05-17T11:12:57.863Z]INFO <- GET https://restful-booker.herokuapp.com/booking?lastname=NonExistentLastname12345 200 (217ms)
+<![CDATA[[2026-05-17T17:40:11.091Z]INFO -> GET https://restful-booker.herokuapp.com/booking?lastname=NonExistentLastname12345{"headers":["Authorization"]}
+[2026-05-17T17:40:11.322Z]INFO <- GET https://restful-booker.herokuapp.com/booking?lastname=NonExistentLastname12345 200 (231ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - GetBooking @booking › GET /booking with invalid checkin date format @regression" classname="bookings.spec.ts" time="0.22">
+<testcase name="Booking API - GetBooking @booking › GET /booking with invalid checkin date format @regression" classname="bookings.spec.ts" time="0.229">
 <system-out>
-<![CDATA[[2026-05-17T11:12:57.649Z]INFO -> GET https://restful-booker.herokuapp.com/booking?checkin=invalid-date{"headers":["Authorization"]}
-[2026-05-17T11:12:57.867Z]INFO <- GET https://restful-booker.herokuapp.com/booking?checkin=invalid-date 500 (218ms)
+<![CDATA[[2026-05-17T17:40:11.197Z]INFO -> GET https://restful-booker.herokuapp.com/booking?checkin=invalid-date{"headers":["Authorization"]}
+[2026-05-17T17:40:11.425Z]INFO <- GET https://restful-booker.herokuapp.com/booking?checkin=invalid-date 500 (227ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - GetBooking @booking › GET /booking with invalid checkout date format @regression" classname="bookings.spec.ts" time="0.231">
+<testcase name="Booking API - GetBooking @booking › GET /booking with invalid checkout date format @regression" classname="bookings.spec.ts" time="0.23">
 <system-out>
-<![CDATA[[2026-05-17T11:12:57.837Z]INFO -> GET https://restful-booker.herokuapp.com/booking?checkout=invalid-date{"headers":["Authorization"]}
-[2026-05-17T11:12:58.064Z]INFO <- GET https://restful-booker.herokuapp.com/booking?checkout=invalid-date 500 (225ms)
+<![CDATA[[2026-05-17T17:40:11.197Z]INFO -> GET https://restful-booker.herokuapp.com/booking?checkout=invalid-date{"headers":["Authorization"]}
+[2026-05-17T17:40:11.425Z]INFO <- GET https://restful-booker.herokuapp.com/booking?checkout=invalid-date 500 (227ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - GetBooking @booking › GET /booking with SQL injection in firstname filter @security" classname="bookings.spec.ts" time="0.227">
+<testcase name="Booking API - GetBooking @booking › GET /booking with SQL injection in firstname filter @security" classname="bookings.spec.ts" time="0.234">
 <system-out>
-<![CDATA[[2026-05-17T11:12:57.853Z]INFO -> GET https://restful-booker.herokuapp.com/booking?firstname=%27%3B+DROP+TABLE+bookings%3B+--{"headers":["Authorization"]}
-[2026-05-17T11:12:58.077Z]INFO <- GET https://restful-booker.herokuapp.com/booking?firstname=%27%3B+DROP+TABLE+bookings%3B+-- 200 (224ms)
+<![CDATA[[2026-05-17T17:40:11.244Z]INFO -> GET https://restful-booker.herokuapp.com/booking?firstname=%27%3B+DROP+TABLE+bookings%3B+--{"headers":["Authorization"]}
+[2026-05-17T17:40:11.476Z]INFO <- GET https://restful-booker.herokuapp.com/booking?firstname=%27%3B+DROP+TABLE+bookings%3B+-- 200 (232ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - GetBooking @booking › GET /booking with SQL injection in lastname filter @security" classname="bookings.spec.ts" time="0.227">
+<testcase name="Booking API - GetBooking @booking › GET /booking with SQL injection in lastname filter @security" classname="bookings.spec.ts" time="0.234">
 <system-out>
-<![CDATA[[2026-05-17T11:12:57.855Z]INFO -> GET https://restful-booker.herokuapp.com/booking?lastname=%27+OR+%271%27%3D%271{"headers":["Authorization"]}
-[2026-05-17T11:12:58.079Z]INFO <- GET https://restful-booker.herokuapp.com/booking?lastname=%27+OR+%271%27%3D%271 200 (223ms)
+<![CDATA[[2026-05-17T17:40:11.245Z]INFO -> GET https://restful-booker.herokuapp.com/booking?lastname=%27+OR+%271%27%3D%271{"headers":["Authorization"]}
+[2026-05-17T17:40:11.476Z]INFO <- GET https://restful-booker.herokuapp.com/booking?lastname=%27+OR+%271%27%3D%271 200 (231ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - GetBooking @booking › GET /booking with very long firstname filter @edge-case" classname="bookings.spec.ts" time="0.221">
+<testcase name="Booking API - GetBooking @booking › GET /booking with very long firstname filter @edge-case" classname="bookings.spec.ts" time="0.237">
 <system-out>
-<![CDATA[[2026-05-17T11:12:57.862Z]INFO -> GET https://restful-booker.herokuapp.com/booking?firstname=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa{"headers":["Authorization"]}
-[2026-05-17T11:12:58.081Z]INFO <- GET https://restful-booker.herokuapp.com/booking?firstname=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa 200 (218ms)
+<![CDATA[[2026-05-17T17:40:11.330Z]INFO -> GET https://restful-booker.herokuapp.com/booking?firstname=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa{"headers":["Authorization"]}
+[2026-05-17T17:40:11.565Z]INFO <- GET https://restful-booker.herokuapp.com/booking?firstname=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa 200 (234ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - GetBooking @booking › GET /booking with very long lastname filter @edge-case" classname="bookings.spec.ts" time="0.22">
+<testcase name="Booking API - GetBooking @booking › GET /booking with very long lastname filter @edge-case" classname="bookings.spec.ts" time="0.235">
 <system-out>
-<![CDATA[[2026-05-17T11:12:57.872Z]INFO -> GET https://restful-booker.herokuapp.com/booking?lastname=bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb{"headers":["Authorization"]}
-[2026-05-17T11:12:58.091Z]INFO <- GET https://restful-booker.herokuapp.com/booking?lastname=bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb 200 (219ms)
+<![CDATA[[2026-05-17T17:40:11.431Z]INFO -> GET https://restful-booker.herokuapp.com/booking?lastname=bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb{"headers":["Authorization"]}
+[2026-05-17T17:40:11.664Z]INFO <- GET https://restful-booker.herokuapp.com/booking?lastname=bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb 200 (232ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - GetBooking @booking › GET /booking with unicode characters in firstname filter @edge-case" classname="bookings.spec.ts" time="0.223">
+<testcase name="Booking API - GetBooking @booking › GET /booking with unicode characters in firstname filter @edge-case" classname="bookings.spec.ts" time="0.234">
 <system-out>
-<![CDATA[[2026-05-17T11:12:57.873Z]INFO -> GET https://restful-booker.herokuapp.com/booking?firstname=%E7%94%A8%E6%88%B7%E5%90%8D{"headers":["Authorization"]}
-[2026-05-17T11:12:58.094Z]INFO <- GET https://restful-booker.herokuapp.com/booking?firstname=%E7%94%A8%E6%88%B7%E5%90%8D 200 (220ms)
+<![CDATA[[2026-05-17T17:40:11.431Z]INFO -> GET https://restful-booker.herokuapp.com/booking?firstname=%E7%94%A8%E6%88%B7%E5%90%8D{"headers":["Authorization"]}
+[2026-05-17T17:40:11.664Z]INFO <- GET https://restful-booker.herokuapp.com/booking?firstname=%E7%94%A8%E6%88%B7%E5%90%8D 200 (232ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - GetBooking @booking › GET /booking with special characters in lastname filter @edge-case" classname="bookings.spec.ts" time="0.221">
+<testcase name="Booking API - GetBooking @booking › GET /booking with special characters in lastname filter @edge-case" classname="bookings.spec.ts" time="0.233">
 <system-out>
-<![CDATA[[2026-05-17T11:12:57.877Z]INFO -> GET https://restful-booker.herokuapp.com/booking?lastname=%40%23%24%25%5E%26*%28%29{"headers":["Authorization"]}
-[2026-05-17T11:12:58.095Z]INFO <- GET https://restful-booker.herokuapp.com/booking?lastname=%40%23%24%25%5E%26*%28%29 200 (218ms)
+<![CDATA[[2026-05-17T17:40:11.482Z]INFO -> GET https://restful-booker.herokuapp.com/booking?lastname=%40%23%24%25%5E%26*%28%29{"headers":["Authorization"]}
+[2026-05-17T17:40:11.713Z]INFO <- GET https://restful-booker.herokuapp.com/booking?lastname=%40%23%24%25%5E%26*%28%29 200 (231ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - GetBooking @booking › GET /booking filter is case-sensitive @regression" classname="bookings.spec.ts" time="0.457">
+<testcase name="Booking API - GetBooking @booking › GET /booking filter is case-sensitive @regression" classname="bookings.spec.ts" time="0.462">
 <system-out>
-<![CDATA[[2026-05-17T11:12:58.080Z]INFO -> GET https://restful-booker.herokuapp.com/booking?firstname=john{"headers":["Authorization"]}
-[2026-05-17T11:12:58.309Z]INFO <- GET https://restful-booker.herokuapp.com/booking?firstname=john 200 (229ms)
-[2026-05-17T11:12:58.309Z]INFO -> GET https://restful-booker.herokuapp.com/booking?firstname=JOHN{"headers":["Authorization"]}
-[2026-05-17T11:12:58.534Z]INFO <- GET https://restful-booker.herokuapp.com/booking?firstname=JOHN 200 (224ms)
+<![CDATA[[2026-05-17T17:40:11.484Z]INFO -> GET https://restful-booker.herokuapp.com/booking?firstname=john{"headers":["Authorization"]}
+[2026-05-17T17:40:11.713Z]INFO <- GET https://restful-booker.herokuapp.com/booking?firstname=john 200 (229ms)
+[2026-05-17T17:40:11.713Z]INFO -> GET https://restful-booker.herokuapp.com/booking?firstname=JOHN{"headers":["Authorization"]}
+[2026-05-17T17:40:11.944Z]INFO <- GET https://restful-booker.herokuapp.com/booking?firstname=JOHN 200 (230ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - GetBooking @booking › GET /booking list response time is acceptable @performance" classname="bookings.spec.ts" time="0.24">
+<testcase name="Booking API - GetBooking @booking › GET /booking list response time is acceptable @performance" classname="bookings.spec.ts" time="0.252">
 <system-out>
-<![CDATA[[2026-05-17T11:12:58.089Z]INFO -> GET https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:58.328Z]INFO <- GET https://restful-booker.herokuapp.com/booking 200 (239ms)
+<![CDATA[[2026-05-17T17:40:11.571Z]INFO -> GET https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:11.822Z]INFO <- GET https://restful-booker.herokuapp.com/booking 200 (250ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - GetBooking @booking › GET /booking with all filters combined @regression" classname="bookings.spec.ts" time="0.227">
+<testcase name="Booking API - GetBooking @booking › GET /booking with all filters combined @regression" classname="bookings.spec.ts" time="0.229">
 <system-out>
-<![CDATA[[2026-05-17T11:12:58.092Z]INFO -> GET https://restful-booker.herokuapp.com/booking?firstname=John&lastname=Doe&checkin=2013-02-23&checkout=2014-10-23{"headers":["Authorization"]}
-[2026-05-17T11:12:58.317Z]INFO <- GET https://restful-booker.herokuapp.com/booking?firstname=John&lastname=Doe&checkin=2013-02-23&checkout=2014-10-23 200 (225ms)
+<![CDATA[[2026-05-17T17:40:11.672Z]INFO -> GET https://restful-booker.herokuapp.com/booking?firstname=John&lastname=Doe&checkin=2013-02-23&checkout=2014-10-23{"headers":["Authorization"]}
+[2026-05-17T17:40:11.899Z]INFO <- GET https://restful-booker.herokuapp.com/booking?firstname=John&lastname=Doe&checkin=2013-02-23&checkout=2014-10-23 200 (227ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Booking API - GetBooking @booking › GET /booking multiple calls return consistent results @regression" classname="bookings.spec.ts" time="0.463">
+<testcase name="Booking API - GetBooking @booking › GET /booking multiple calls return consistent results @regression" classname="bookings.spec.ts" time="0.502">
 <system-out>
-<![CDATA[[2026-05-17T11:12:58.095Z]INFO -> GET https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:58.331Z]INFO <- GET https://restful-booker.herokuapp.com/booking 200 (236ms)
-[2026-05-17T11:12:58.331Z]INFO -> GET https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
-[2026-05-17T11:12:58.554Z]INFO <- GET https://restful-booker.herokuapp.com/booking 200 (223ms)
-]]>
-</system-out>
-</testcase>
-</testsuite>
-<testsuite name="data-integrity.spec.ts" timestamp="2026-05-17T11:12:48.222Z" hostname="api" tests="2" failures="0" skipped="0" time="0.895" errors="0">
-<testcase name="Cross-resource data integrity @regression › Every post returned for a user references that same userId" classname="data-integrity.spec.ts" time="0.846">
-<system-out>
-<![CDATA[[2026-05-17T11:12:58.105Z]INFO -> GET /users/1{"headers":["Authorization"]}
-[2026-05-17T11:12:58.158Z]INFO <- GET /users/1 200 (53ms)
-[2026-05-17T11:12:58.159Z]INFO -> GET /users/1/posts{"headers":["Authorization"]}
-[2026-05-17T11:12:58.947Z]INFO <- GET /users/1/posts 200 (788ms)
-]]>
-</system-out>
-</testcase>
-<testcase name="Cross-resource data integrity @regression › List of users contains no duplicate ids or emails" classname="data-integrity.spec.ts" time="0.049">
-<system-out>
-<![CDATA[[2026-05-17T11:12:58.108Z]INFO -> GET /users{"headers":["Authorization"]}
-[2026-05-17T11:12:58.155Z]INFO <- GET /users 200 (47ms)
+<![CDATA[[2026-05-17T17:40:11.672Z]INFO -> GET https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:11.919Z]INFO <- GET https://restful-booker.herokuapp.com/booking 200 (246ms)
+[2026-05-17T17:40:11.919Z]INFO -> GET https://restful-booker.herokuapp.com/booking{"headers":["Authorization"]}
+[2026-05-17T17:40:12.169Z]INFO <- GET https://restful-booker.herokuapp.com/booking 200 (249ms)
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="example.spec.ts" timestamp="2026-05-17T11:12:48.222Z" hostname="api" tests="2" failures="0" skipped="0" time="1.463" errors="0">
-<testcase name="has title" classname="example.spec.ts" time="0.828">
-</testcase>
-<testcase name="get started link" classname="example.spec.ts" time="0.635">
-</testcase>
-</testsuite>
-<testsuite name="posts.spec.ts" timestamp="2026-05-17T11:12:48.222Z" hostname="api" tests="3" failures="0" skipped="0" time="1.561" errors="0">
-<testcase name="Posts API @smoke › GET /posts returns a valid list" classname="posts.spec.ts" time="0.8">
+<testsuite name="data-integrity.spec.ts" timestamp="2026-05-17T17:40:00.765Z" hostname="api" tests="2" failures="0" skipped="0" time="0.896" errors="0">
+<testcase name="Cross-resource data integrity @regression › Every post returned for a user references that same userId" classname="data-integrity.spec.ts" time="0.818">
 <system-out>
-<![CDATA[[2026-05-17T11:12:58.324Z]INFO -> GET /posts?_limit=10{"headers":["Authorization"]}
-[2026-05-17T11:12:59.122Z]INFO <- GET /posts?_limit=10 200 (798ms)
+<![CDATA[[2026-05-17T17:40:11.722Z]INFO -> GET /users/1{"headers":["Authorization"]}
+[2026-05-17T17:40:11.813Z]INFO <- GET /users/1 200 (90ms)
+[2026-05-17T17:40:11.813Z]INFO -> GET /users/1/posts{"headers":["Authorization"]}
+[2026-05-17T17:40:12.536Z]INFO <- GET /users/1/posts 200 (723ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Posts API @smoke › GET /posts filtered by userId returns only that user&apos;s posts" classname="posts.spec.ts" time="0.053">
+<testcase name="Cross-resource data integrity @regression › List of users contains no duplicate ids or emails" classname="data-integrity.spec.ts" time="0.078">
 <system-out>
-<![CDATA[[2026-05-17T11:12:58.336Z]INFO -> GET /posts?userId=1{"headers":["Authorization"]}
-[2026-05-17T11:12:58.385Z]INFO <- GET /posts?userId=1 200 (49ms)
-]]>
-</system-out>
-</testcase>
-<testcase name="Posts API @smoke › POST /posts creates a post" classname="posts.spec.ts" time="0.708">
-<system-out>
-<![CDATA[[2026-05-17T11:12:58.394Z]INFO -> POST /posts{"headers":["Authorization"]}
-[2026-05-17T11:12:59.099Z]INFO <- POST /posts 201 (705ms)
+<![CDATA[[2026-05-17T17:40:11.828Z]INFO -> GET /users{"headers":["Authorization"]}
+[2026-05-17T17:40:11.904Z]INFO <- GET /users 200 (76ms)
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="users.spec.ts" timestamp="2026-05-17T11:12:48.222Z" hostname="api" tests="6" failures="0" skipped="0" time="1.839" errors="0">
-<testcase name="Users API @smoke › GET /users returns a valid list" classname="users.spec.ts" time="0.054">
+<testsuite name="example.spec.ts" timestamp="2026-05-17T17:40:00.765Z" hostname="api" tests="2" failures="0" skipped="0" time="1.146" errors="0">
+<testcase name="has title" classname="example.spec.ts" time="0.551">
+</testcase>
+<testcase name="get started link" classname="example.spec.ts" time="0.595">
+</testcase>
+</testsuite>
+<testsuite name="posts.spec.ts" timestamp="2026-05-17T17:40:00.765Z" hostname="api" tests="3" failures="0" skipped="0" time="2.343" errors="0">
+<testcase name="Posts API @smoke › GET /posts returns a valid list" classname="posts.spec.ts" time="0.813">
 <system-out>
-<![CDATA[[2026-05-17T11:12:58.545Z]INFO -> GET /users{"headers":["Authorization"]}
-[2026-05-17T11:12:58.596Z]INFO <- GET /users 200 (51ms)
+<![CDATA[[2026-05-17T17:40:11.951Z]INFO -> GET /posts?_limit=10{"headers":["Authorization"]}
+[2026-05-17T17:40:12.761Z]INFO <- GET /posts?_limit=10 200 (809ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Users API @smoke › GET /users/:id returns a single valid user" classname="users.spec.ts" time="0.051">
+<testcase name="Posts API @smoke › GET /posts filtered by userId returns only that user&apos;s posts" classname="posts.spec.ts" time="0.79">
 <system-out>
-<![CDATA[[2026-05-17T11:12:58.567Z]INFO -> GET /users/1{"headers":["Authorization"]}
-[2026-05-17T11:12:58.615Z]INFO <- GET /users/1 200 (48ms)
+<![CDATA[[2026-05-17T17:40:12.183Z]INFO -> GET /posts?userId=1{"headers":["Authorization"]}
+[2026-05-17T17:40:12.970Z]INFO <- GET /posts?userId=1 200 (786ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Users API @smoke › GET /users/:id with non-existent id returns 404" classname="users.spec.ts" time="0.02">
+<testcase name="Posts API @smoke › POST /posts creates a post" classname="posts.spec.ts" time="0.74">
 <system-out>
-<![CDATA[[2026-05-17T11:12:58.603Z]INFO -> GET /users/99999{"headers":["Authorization"]}
-[2026-05-17T11:12:58.621Z]INFO <- GET /users/99999 404 (17ms)
+<![CDATA[[2026-05-17T17:40:12.548Z]INFO -> POST /posts{"headers":["Authorization"]}
+[2026-05-17T17:40:13.285Z]INFO <- POST /posts 201 (737ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Users API @smoke › POST /users creates a user and echoes payload @regression" classname="users.spec.ts" time="0.729">
+</testsuite>
+<testsuite name="users.spec.ts" timestamp="2026-05-17T17:40:00.765Z" hostname="api" tests="6" failures="0" skipped="0" time="3.134" errors="0">
+<testcase name="Users API @smoke › GET /users returns a valid list" classname="users.spec.ts" time="0.083">
 <system-out>
-<![CDATA[[2026-05-17T11:12:58.634Z]INFO -> POST /users{"headers":["Authorization"]}
-[2026-05-17T11:12:59.354Z]INFO <- POST /users 201 (719ms)
+<![CDATA[[2026-05-17T17:40:12.555Z]INFO -> GET /users{"headers":["Authorization"]}
+[2026-05-17T17:40:12.633Z]INFO <- GET /users 200 (78ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Users API @smoke › PUT /users/:id updates and returns the updated resource @regression" classname="users.spec.ts" time="0.735">
+<testcase name="Users API @smoke › GET /users/:id returns a single valid user" classname="users.spec.ts" time="0.04">
 <system-out>
-<![CDATA[[2026-05-17T11:12:58.634Z]INFO -> PUT /users/1{"headers":["Authorization"]}
-[2026-05-17T11:12:59.364Z]INFO <- PUT /users/1 200 (730ms)
+<![CDATA[[2026-05-17T17:40:12.596Z]INFO -> GET /users/1{"headers":["Authorization"]}
+[2026-05-17T17:40:12.633Z]INFO <- GET /users/1 200 (37ms)
 ]]>
 </system-out>
 </testcase>
-<testcase name="Users API @smoke › DELETE /users/:id returns success @regression" classname="users.spec.ts" time="0.25">
+<testcase name="Users API @smoke › GET /users/:id with non-existent id returns 404" classname="users.spec.ts" time="0.766">
 <system-out>
-<![CDATA[[2026-05-17T11:12:58.871Z]INFO -> DELETE /users/1{"headers":["Authorization"]}
-[2026-05-17T11:12:59.120Z]INFO <- DELETE /users/1 200 (249ms)
+<![CDATA[[2026-05-17T17:40:12.640Z]INFO -> GET /users/99999{"headers":["Authorization"]}
+[2026-05-17T17:40:13.405Z]INFO <- GET /users/99999 404 (764ms)
+]]>
+</system-out>
+</testcase>
+<testcase name="Users API @smoke › POST /users creates a user and echoes payload @regression" classname="users.spec.ts" time="0.732">
+<system-out>
+<![CDATA[[2026-05-17T17:40:12.641Z]INFO -> POST /users{"headers":["Authorization"]}
+[2026-05-17T17:40:13.371Z]INFO <- POST /users 201 (729ms)
+]]>
+</system-out>
+</testcase>
+<testcase name="Users API @smoke › PUT /users/:id updates and returns the updated resource @regression" classname="users.spec.ts" time="0.787">
+<system-out>
+<![CDATA[[2026-05-17T17:40:12.776Z]INFO -> PUT /users/1{"headers":["Authorization"]}
+[2026-05-17T17:40:13.558Z]INFO <- PUT /users/1 200 (782ms)
+]]>
+</system-out>
+</testcase>
+<testcase name="Users API @smoke › DELETE /users/:id returns success @regression" classname="users.spec.ts" time="0.726">
+<system-out>
+<![CDATA[[2026-05-17T17:40:12.769Z]INFO -> DELETE /users/1{"headers":["Authorization"]}
+[2026-05-17T17:40:13.493Z]INFO <- DELETE /users/1 200 (724ms)
 ]]>
 </system-out>
 </testcase>
